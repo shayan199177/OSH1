@@ -14,7 +14,6 @@
 </head>
 <body>
 
-
 <div class="container-fluid sticky-top bb">
   <div class="bg-main w-100">
     <div class="container d-flex justify-content-start">
@@ -29,6 +28,49 @@
           <button class="btn button-search btn-search" type="submit"><i class="fas fa-search m-6p"></i>
           </button>
         </form>
+      </div>
+
+      <div class="d-flex align-items-center mr-auto">
+        <div class="dropdown ml-4">
+          <button class="btn btn-s dropdown-toggle" type="button" id="profileDropdown"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-user-alt i-top ml-2"></i>
+            <span class="small">
+              شایان سلیم زاده
+            </span>
+            <i class="fas fa-angle-down i-top mr-2"></i>
+          </button>
+          <div class="dropdown-menu top-menu-dropdown" aria-labelledby="profileDropdown">
+            <a href="#" class="dropdown-item small">
+              <i class="fas fa-heart pl-2"></i>
+              علاقه‌مندی‌ها
+            </a>
+            <a href="#" class="dropdown-item small">
+              <i class="fas fa-box pl-2"></i>
+              سفارش‌های من
+            </a>
+            <a href="#" class="dropdown-item small">
+              <i class="fas fa-user-cog  pl-2"></i>
+              تنظیمات پروفایل
+            </a>
+            <a href="#" class="dropdown-item small">
+              <i class="fas fa-sign-out-alt pl-2"></i>
+              خروج از حساب کاربری
+            </a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="btn btn-s dropdown-toggle" type="button" id="cartDropdown"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+            </svg>
+          </button>
+          <div class="dropdown-menu top-menu-dropdown p-3" aria-labelledby="cartDropdown">
+            <p class="small">سبد خرید شما خالی است.</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -154,49 +196,6 @@
               <a class="nav-link-2 a-link-header" href="#">تماس با ما</a>
             </li>
           </ul>
-        </div>
-
-        <div class="col-4 align-self-center d-flex justify-content-end">
-          <div class="dropdown ml-4">
-            <button class="btn btn-s dropdown-toggle" type="button" id="profileDropdown"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="fas fa-user-alt i-top ml-2"></i>
-              <span class="small">
-                                شایان سلیم زاده
-                            </span>
-              <i class="fas fa-angle-down i-top mr-2"></i>
-            </button>
-            <div class="dropdown-menu top-menu-dropdown" aria-labelledby="profileDropdown">
-              <a href="#" class="dropdown-item small">
-                <i class="fas fa-heart pl-2"></i>
-                علاقه‌مندی‌ها
-              </a>
-              <a href="#" class="dropdown-item small">
-                <i class="fas fa-box pl-2"></i>
-                سفارش‌های من
-              </a>
-              <a href="#" class="dropdown-item small">
-                <i class="fas fa-user-cog  pl-2"></i>
-                تنظیمات پروفایل
-              </a>
-              <a href="#" class="dropdown-item small">
-                <i class="fas fa-sign-out-alt pl-2"></i>
-                خروج از حساب کاربری
-              </a>
-            </div>
-          </div>
-          <div class="dropdown">
-            <button class="btn btn-s dropdown-toggle" type="button" id="dropdownMenu3"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="fas fa-shopping-cart i-top"><span
-                class="badge badge-light i-top small">0</span></i>
-            </button>
-            <!--                        <div class="dropdown-menu top-menu-dropdown" aria-labelledby="dropdownMenu3">-->
-            <!--                            <button class="dropdown-item" type="button">Action</button>-->
-            <!--                            <button class="dropdown-item" type="button">Another action</button>-->
-            <!--                            <button class="dropdown-item" type="button">Something else here</button>-->
-            <!--                        </div>-->
-          </div>
         </div>
       </div>
     </div>
@@ -793,10 +792,10 @@
 <div class="container-fluid bg-white">
   <div class="container pt-5">
     <div class="text-center mb-3">
-        <a href="#" class="a-shop-off">
-          <h4 class="d-inline">مقالات آموزشی</h4>
-          <img src="img/icon-flat/icons8-news-32.png" class="px-2" alt="">
-        </a>
+      <a href="#" class="a-shop-off">
+        <h4 class="d-inline">مقالات آموزشی</h4>
+        <img src="img/icon-flat/icons8-news-32.png" class="px-2" alt="">
+      </a>
     </div>
     <div class="col-12">
       <div class="owl-carousel slider-article item-slider-1 py-3">
