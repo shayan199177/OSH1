@@ -61,12 +61,12 @@
         </div>
 
         <div class="dropdown">
-          <button class="btn btn-s dropdown-toggle" type="button" id="cartDropdown"
+          <a class="btn btn-s dropdown-toggle" type="button" id="cartDropdown"
                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
             </svg>
-          </button>
+          </a>
           <div class="dropdown-menu top-menu-dropdown p-3" aria-labelledby="cartDropdown">
             <p class="small">سبد خرید شما خالی است.</p>
           </div>
@@ -80,100 +80,36 @@
         <div class="col-8 align-self-center">
           <ul class="d-flex justify-content-start">
             <li class="dropdown pl-3">
-              <button class="btn btn-s dropdown-toggle" type="button" id="dropdownMenu1"
-                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-bars"></i><span class="small pr-2">دسته بندی کالاها</span>
-              </button>
-              <div class="dropdown-menu top-menu-dropdown" aria-labelledby="dropdownMenu1">
-                <button class="btn btn-s dropdown-toggle" type="button" id="dropdownMenu11"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="fas fa-bars"></i><span class="small pr-2">سگ ها</span>
-                </button>
-                <div class="dropdown-menu top-sub-menu-dropdown" aria-labelledby="dropdownMenu11">
-                  <button class="dropdown-item" type="button">Action</button>
-                  <button class="dropdown-item" type="button">Another action</button>
-                  <button class="dropdown-item" type="button">Something else here</button>
-                </div>
 
-                <button class="btn btn-s dropdown-toggle" type="button" id="dropdownMenu22"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="fas fa-bars"></i><span class="small pr-2">گربه ها</span>
-                </button>
-                <div class="dropdown-menu top-sub-menu-dropdown" aria-labelledby="dropdownMenu22">
-                  <button class="dropdown-item" type="button">Action</button>
-                  <button class="dropdown-item" type="button">Another action</button>
-                  <button class="dropdown-item" type="button">Something else here</button>
-                </div>
-
-                <button class="btn btn-s dropdown-toggle" type="button" id="dropdownMenu33"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="fas fa-bars"></i><span class="small pr-2">آبزیان</span>
-                </button>
-                <div class="dropdown-menu top-sub-menu-dropdown" aria-labelledby="dropdownMenu33">
-                  <button class="dropdown-item" type="button">Action</button>
-                  <button class="dropdown-item" type="button">Another action</button>
-                  <button class="dropdown-item" type="button">Something else here</button>
-                </div>
-
-                <button class="btn btn-s dropdown-toggle" type="button" id="dropdownMenu44"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="fas fa-bars"></i><span class="small pr-2">پرندگان</span>
-                </button>
-                <div class="dropdown-menu top-sub-menu-dropdown" aria-labelledby="dropdownMenu44">
-                  <button class="dropdown-item" type="button">Action</button>
-                  <button class="dropdown-item" type="button">Another action</button>
-                  <button class="dropdown-item" type="button">Something else here</button>
-                </div>
-
-                <button class="btn btn-s dropdown-toggle" type="button" id="dropdownMenu55"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="fas fa-bars"></i><span class="small pr-2">دسته بندی کالاها</span>
-                </button>
-                <div class="dropdown-menu top-sub-menu-dropdown" aria-labelledby="dropdownMenu55">
-                  <button class="dropdown-item" type="button">Action</button>
-                  <button class="dropdown-item" type="button">Another action</button>
-                  <button class="dropdown-item" type="button">Something else here</button>
-                </div>
-
-                <button class="btn btn-s dropdown-toggle" type="button" id="dropdownMenu66"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="fas fa-bars"></i><span class="small pr-2">دسته بندی کالاها</span>
-                </button>
-                <div class="dropdown-menu top-sub-menu-dropdown" aria-labelledby="dropdownMenu66">
-                  <button class="dropdown-item" type="button">Action</button>
-                  <button class="dropdown-item" type="button">Another action</button>
-                  <button class="dropdown-item" type="button">Something else here</button>
-                </div>
-              </div>
             </li>
             <li class="nav-item px-3">
               <a class="nav-link-2 a-link-header" href="#">تخفیف های ویژه</a>
             </li>
             <li class="nav-item dropdown px-3 d-none d-sm-block">
               <div class="dropdown">
-                <button class="btn btn-s dropdown-toggle" type="button" id="dropdownMenu2"
+                <a class="btn btn-s dropdown-toggle" href="#" id="dropdownMenu2"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <span class="small">خدمات شایان پت</span>
-                </button>
+                </a>
                 <div class="dropdown-menu top-menu-dropdown" aria-labelledby="dropdownMenu2">
-                  <button class="dropdown-item small" type="button">
+                  <a class="dropdown-item small" href="#">
                     رزرو دامپزشکی
-                  </button>
-                  <button class="dropdown-item small" type="button">
+                  </a>
+                  <a class="dropdown-item small" href="#">
                     اعزام دامپزشک
-                  </button>
-                  <button class="dropdown-item small" type="button">
+                  </a>
+                  <a class="dropdown-item small" href="#">
                     پانسیون پت شما
-                  </button>
-                  <button class="dropdown-item small" type="button">
+                  </a>
+                  <a class="dropdown-item small" href="#">
                     رزرو دامپزشکی
-                  </button>
-                  <button class="dropdown-item small" type="button">
+                  </a>
+                  <a class="dropdown-item small" href="#">
                     رزرو دامپزشکی
-                  </button>
-                  <button class="dropdown-item small" type="button">
+                  </a>
+                  <a class="dropdown-item small" href="#">
                     رزرو دامپزشکی
-                  </button>
+                  </a>
                 </div>
               </div>
               <!--                            <a href="#" class="nav-link-2 a-link-header">خدمات شایان پت</a>-->
