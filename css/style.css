@@ -113,10 +113,9 @@ a:hover {
 
 .top-menu-dropdown {
     position: absolute;
-    transform: translate3d(0px, 25px, 0px);
-    top: 13px !important;
-    left: -26px !important;
-    will-change: transform;
+    top: 38px !important;
+    right: 0 !important;
+    transform: none !important;
 }
 
 .dropdown-menu {
@@ -126,7 +125,7 @@ a:hover {
     z-index: 1000;
     display: none;
     float: right;
-    min-width: 10rem;
+    min-width: 12rem;
     padding: .5rem 0;
     margin: .125rem 0 0;
     font-size: 1rem;
@@ -135,12 +134,82 @@ a:hover {
     list-style: none;
     background-color: #fff;
     background-clip: padding-box;
-    border: 1px solid rgba(0, 0, 0, .15);
+    border: 1px solid #dee2e6;
     border-radius: 0 !important;
 }
 
 .dropdown-toggle::after {
     content: none;
+}
+
+.dropdown-menu-2{
+    position: absolute;
+
+    border: none;
+    background: aliceblue;
+}
+@media screen and (min-width: 767px) {
+    .dropdown-menu {
+        width: 650px;
+    }
+}
+
+.navbar-nav ul {
+    margin: 0 !important;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+}
+.drop-main {
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 209px;
+    padding: 0.5rem 0;
+    font-size: 0.88rem;
+    color: #212529;
+    text-align: right;
+    list-style: none;
+    background-color: white;
+    background-clip: padding-box;
+    border: none;
+    top: 39px !important;
+    right: 0 !important;
+    transform: none !important;
+}
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+.sub-drop-main {
+    position: absolute;
+    top: -10px !important;
+    right: 114px;
+    z-index: 1000;
+    display: none;
+    min-width: 400px;
+    max-width: 534px;
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
+    font-size: 0.88rem;
+    color: #212529;
+    text-align: right;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+     border: none !important;
+     border-radius: unset;
 }
 
 .logo_size_30 {
