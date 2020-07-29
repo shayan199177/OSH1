@@ -42,6 +42,21 @@ a:hover {
     }
 }
 
+.smart-scroll{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+.scrolled-down{
+    transform:translateY(-100%); transition: all 0.4s ease-in-out;
+}
+.scrolled-up{
+    transform:translateY(0); transition: all 0.4s ease-in-out;
+}
+
+
 .btn {
     outline: none;
     box-shadow: none;
@@ -389,7 +404,10 @@ a:hover {
     color: #3c3c3c;
     transition: all, 0.3s;
 }
-
+.top-padding-main{
+    height: 60px;
+    width: 100%;
+}
 .form-control {
     display: block;
     width: 100% !important;
@@ -451,6 +469,8 @@ a:hover {
 
 .h-nav-top {
     height: 56px;
+    top: 67px;
+    z-index: 1010;
     width: 100%;
 }
 
