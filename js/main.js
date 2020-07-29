@@ -1,3 +1,9 @@
+const menuIcon = document.querySelector(".humberger-menu");
+const navbar = document.querySelector(".navbar");
+menuIcon.addEventListener("click" ,() => {
+    navbar.classList.toggle("change");
+});
+
 $(document).ready(function () {
     $(".dropdown, .btn-group").hover(function () {
         var dropdownMenu = $(this).children(".dropdown-menu");
@@ -6,6 +12,7 @@ $(document).ready(function () {
         }
     });
 });
+
 
 jQuery('.slider-1').owlCarousel({
     rtl: true,

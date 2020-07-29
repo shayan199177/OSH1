@@ -112,6 +112,101 @@ a:hover {
     color: #3c3c3c;
 }
 
+.navbar {
+    width: 260px;
+    height: 100%;
+    background: #007bff;
+    position: fixed;
+    top: 0;
+    right: -260px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: right 0.8s cubic-bezier(1, 0, 0, 1);
+    z-index: 10;
+}
+
+.change {
+    right: 0;
+}
+
+.humberger-menu {
+    height: 30px;
+    width: 35px;
+    position: fixed;
+    right: 50px;
+    top: 100px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.line {
+    width: 100%;
+    height: 3px;
+    background: #424b53;
+    transition: all 0.7s;
+}
+
+.change .line {
+    background: white;
+}
+
+.nav-link {
+    font-size: 0.88rem;
+    color: white;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.nav-list {
+    top: 155px;
+    position: absolute;
+}
+
+.change .line-1 {
+    transform: rotateZ(-45deg) translate(-8px, 6px);
+}
+
+.change .line-2 {
+    opacity: 0;
+}
+
+.change .line-3 {
+    transform: rotateZ(45deg) translate(-8px, -6px);
+}
+
+.nav-link::before,
+.nav-link::after {
+    height: 2px;
+    content: "";
+    width: 100%;
+    position: absolute;
+    background: white;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+
+.nav-link::after {
+    bottom: 0;
+    transform-origin: right;
+}
+
+.nav-link::before {
+    top: 0;
+    transform-origin: left;
+}
+
+.nav-link:hover::before,
+.nav-link:hover::after {
+    transform: scaleX(1);
+}
+
 .user-menu-dropdown {
     position: absolute;
     top: 40px !important;
@@ -186,11 +281,6 @@ a:hover {
     background: white;
 }
 
-@media screen and (min-width: 767px) {
-    .dropdown-menu {
-        width: 750px;
-    }
-}
 
 .navbar-nav ul {
     margin: 0 !important;
@@ -701,12 +791,45 @@ h5.price-font {
 }
 
 .top-sub-menu-dropdown {
-    /*position: absolute;*/
     will-change: transform;
-    /*top: 0px;*/
-    /*left: 0px;*/
     transform: translate3d(25px, 129px, 0px);
     position: absolute !important;
     top: -96% !important;
     right: 131% !important;
+}
+
+/*  media query  */
+@media screen and (min-width: 767px) {
+    .dropdown-menu {
+        width: 750px;
+    }
+}
+
+@media (max-width: 767px) {
+    .humberger-menu {
+        height: 30px;
+        width: 32px;
+        position: fixed;
+        right: 29px;
+        top: 102px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .change .line-1 {
+        position: relative;
+        transform: rotateZ(-45deg) translate(-8px, 6px);
+    }
+
+    .change .line-2 {
+        position: relative;
+        opacity: 0;
+    }
+
+    .change .line-3 {
+        position: relative;
+        transform: rotateZ(45deg) translate(-8px, -6px);
+    }
 }
