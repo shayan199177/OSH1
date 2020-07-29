@@ -14,7 +14,7 @@
 </head>
 <body>
 
-<div class="container-fluid sticky-top bb">
+<div class="container-fluid sticky-top">
     <div class="bg-main w-100">
         <div class="container d-flex justify-content-start">
             <div class="col-2 py-3">
@@ -40,7 +40,7 @@
             </span>
                         <i class="fas fa-angle-down i-top mr-2"></i>
                     </button>
-                    <div class="dropdown-menu top-menu-dropdown" aria-labelledby="profileDropdown">
+                    <div class="dropdown-menu user-menu-dropdown" aria-labelledby="profileDropdown">
                         <a href="#" class="dropdown-item small py-2">
                             <i class="fas fa-heart pl-2"></i>
                             علاقه‌مندی‌ها
@@ -60,18 +60,14 @@
                     </div>
                 </div>
 
-                <div class="dropdown">
-                    <a class="btn btn-s dropdown-toggle" type="button" id="cartDropdown"
-                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div>
+                    <a class="btn btn-s" type="button" href="#">
                         <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor"
                              xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd"
                                   d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
                         </svg>
                     </a>
-                    <div class="dropdown-menu top-menu-dropdown p-3" aria-labelledby="cartDropdown">
-                        <p class="small">سبد خرید شما خالی است.</p>
-                    </div>
                 </div>
             </div>
         </div>
@@ -79,153 +75,145 @@
     <div class="bg-white w-100 h-nav-top d-flex align-items-center border-bottom">
         <div class="container">
             <div class="row">
-                <div class="col-8 align-self-center">
+                <div class="col-12 align-self-center">
                     <ul class="d-flex justify-content-start">
                         <li class="nav-item dropdown px-3 d-none d-sm-block">
-                            <a class="btn btn-s dropdown-toggle"
+                            <a class="btn btn-s nav-item-hover dropdown-toggle"
                                href="#" id="navbarDropdown" role="button"
                                data-toggle="dropdown"aria-haspopup="true" aria-expanded="false"
                                onclick="downicon()">
                                 <i class="fas fa-bars"></i><span class="small mr-2">دسته بندی محصول ها</span>
                             </a>
-                            <ul class="dropdown-menu drop-main" aria-labelledby="navbarDropdown">
+                            <ul class="dropdown-menu menu-category drop-main" aria-labelledby="navbarDropdown">
                                 <li class="nav-item dropdown">
-                                    <a class="dropdown-item dropdown-toggle py-3" href="#"
+                                    <a class="dropdown-item dropdown-item-mega dropdown-toggle py-3" href="#"
                                        id="navbarDropdown1"
                                        role="button" data-toggle="dropdown" aria-haspopup="true"
                                        aria-expanded="false">
                                         سگ ها
                                     </a>
-                                    <ul class="dropdown-menu sub-drop-main drop-1"
+                                    <ul class="dropdown-menu sub-drop-main"
                                         aria-labelledby="navbarDropdown1">
-                                        <li><a class="dropdown-item py-2" href="#">غذای خشک</a></li>
-                                        <li><a class="dropdown-item py-2" href="#">کنسرو و پوچ</a></li>
-                                        <li><a class="dropdown-item py-2" href="#">تشویقی و مکمل</a></li>
-                                        <li><a class="dropdown-item py-2" href="#">اسباب بازی و جویدنی</a>
+                                        <li><a class="dropdown-item-sub py-2 pr-4" href="#">غذای خشک</a></li>
+                                        <li><a class="dropdown-item-sub py-2 pr-4" href="#">کنسرو و پوچ</a></li>
+                                        <li><a class="dropdown-item-sub py-2 pr-4" href="#">تشویقی و مکمل</a></li>
+                                        <li><a class="dropdown-item-sub py-2 pr-4" href="#">اسباب بازی و جویدنی</a>
                                         </li>
-                                        <li><a class="dropdown-item py-2" href="#">قلاده وبند</a></li>
-                                        <li><a class="dropdown-item py-2" href="#">ظروف و لوازم نگهداری</a>
+                                        <li><a class="dropdown-item-sub py-2 pr-4" href="#">قلاده وبند</a></li>
+                                        <li><a class="dropdown-item-sub py-2 pr-4" href="#">ظروف و لوازم نگهداری</a>
                                         </li>
-                                        <li><a class="dropdown-item py-2" href="#">لوازم بهداشتی و پوشاک</a>
+                                        <li><a class="dropdown-item-sub py-2 pr-4" href="#">لوازم بهداشتی و پوشاک</a>
                                         </li>
                                     </ul>
                                 </li>
 
                                 <li class="nav-item dropdown">
-                                    <a class="dropdown-item dropdown-toggle py-3" href="#"
+                                    <a class="dropdown-item dropdown-item-mega dropdown-toggle py-3" href="#"
                                        id="navbarDropdown2"
                                        role="button" data-toggle="dropdown" aria-haspopup="true"
                                        aria-expanded="false">
                                         گربه ها
                                     </a>
-                                    <ul class="dropdown-menu sub-drop-main drop-2"
-                                        aria-labelledby="navbarDropdown2">
-                                        <li><a class="dropdown-item py-2" href="#">غذای خشک</a></li>
-                                        <li><a class="dropdown-item py-2" href="#">کنسرو و پوچ</a></li>
-                                        <li><a class="dropdown-item py-2" href="#">مکمل و ویتامین</a></li>
-                                        <li><a class="dropdown-item py-2" href="#">اسباب بازی و توپ</a></li>
-                                        <li><a class="dropdown-item py-2" href="#">گردنبند</a></li>
-                                        <li><a class="dropdown-item py-2" href="#">لوازم بهداشتی و پد</a>
+                                    <ul class="dropdown-menu sub-drop-main sub-cat"
+                                        aria-labelledby="navbarDropdown1">
+                                        <li><a class="dropdown-item-sub py-2 pr-4" href="#">غذای خشک</a></li>
+                                        <li><a class="dropdown-item-sub py-2 pr-4" href="#">کنسرو و پوچ</a></li>
+                                        <li><a class="dropdown-item-sub py-2 pr-4" href="#">تشویقی و مکمل</a></li>
+                                        <li><a class="dropdown-item-sub py-2 pr-4" href="#">اسباب بازی و جویدنی</a>
                                         </li>
-                                        <li><a class="dropdown-item" href="#">خاک گربه</a></li>
+                                        <li><a class="dropdown-item-sub py-2 pr-4" href="#">قلاده وبند</a></li>
+                                        <li><a class="dropdown-item-sub py-2 pr-4" href="#">ظروف و لوازم نگهداری</a>
+                                        </li>
+                                        <li><a class="dropdown-item-sub py-2 pr-4" href="#">لوازم بهداشتی و پوشاک</a>
+                                        </li>
                                     </ul>
                                 </li>
 
                                 <li class="nav-item dropdown">
-                                    <a class="dropdown-item dropdown-toggle py-3" href="#"
+                                    <a class="dropdown-item dropdown-item-mega dropdown-toggle py-3" href="#"
                                        id="navbarDropdown3"
                                        role="button" data-toggle="dropdown" aria-haspopup="true"
                                        aria-expanded="false">
                                         آبزیان
                                     </a>
-                                    <ul class="dropdown-menu sub-drop-main drop-3"
-                                        aria-labelledby="navbarDropdown3">
-                                        <li><a class="dropdown-item" href="#">ماهیان آب شیرین</a></li>
-                                        <li><a class="dropdown-item" href="#">ماهیان آب شور</a></li>
-                                        <li><a class="dropdown-item" href="#">ماهیان آکواریوم پلنت</a></li>
-                                        <li><a class="dropdown-item" href="#">تانک آکواریوم</a></li>
-                                        <li><a class="dropdown-item" href="#">وسایل و تجهیزات</a></li>
-                                        <li><a class="dropdown-item" href="#">ویواریوم</a></li>
-                                        <li><a class="dropdown-item" href="#">سنگ و دکور</a></li>
-                                        <li><a class="dropdown-item" href="#">سفارش ساخت آکواریوم</a></li>
+                                    <ul class="dropdown-menu sub-drop-main sub-fish"
+                                        aria-labelledby="navbarDropdown1">
+                                        <li><a class="dropdown-item-sub py-2 pr-4" href="#">غذای خشک</a></li>
+                                        <li><a class="dropdown-item-sub py-2 pr-4" href="#">کنسرو و پوچ</a></li>
+                                        <li><a class="dropdown-item-sub py-2 pr-4" href="#">تشویقی و مکمل</a></li>
+                                        <li><a class="dropdown-item-sub py-2 pr-4" href="#">اسباب بازی و جویدنی</a>
+                                        </li>
+                                        <li><a class="dropdown-item-sub py-2 pr-4" href="#">قلاده وبند</a></li>
+                                        <li><a class="dropdown-item-sub py-2 pr-4" href="#">ظروف و لوازم نگهداری</a>
+                                        </li>
+                                        <li><a class="dropdown-item-sub py-2 pr-4" href="#">لوازم بهداشتی و پوشاک</a>
+                                        </li>
                                     </ul>
                                 </li>
 
                                 <li class="nav-item dropdown">
-                                    <a class="dropdown-item dropdown-toggle py-3" href="#"
+                                    <a class="dropdown-item dropdown-item-mega dropdown-toggle py-3" href="#"
                                        id="navbarDropdown4"
                                        role="button" data-toggle="dropdown" aria-haspopup="true"
                                        aria-expanded="false">
                                         پرندگان
                                     </a>
-                                    <ul class="dropdown-menu sub-drop-main drop-4"
-                                        aria-labelledby="navbarDropdown4">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <ul class="dropdown-menu sub-drop-main sub-bird"
+                                        aria-labelledby="navbarDropdown1">
+                                        <li><a class="dropdown-item-sub py-2 pr-4" href="#">غذای خشک</a></li>
+                                        <li><a class="dropdown-item-sub py-2 pr-4" href="#">کنسرو و پوچ</a></li>
+                                        <li><a class="dropdown-item-sub py-2 pr-4" href="#">تشویقی و مکمل</a></li>
+                                        <li><a class="dropdown-item-sub py-2 pr-4" href="#">اسباب بازی و جویدنی</a>
+                                        </li>
+                                        <li><a class="dropdown-item-sub py-2 pr-4" href="#">قلاده وبند</a></li>
+                                        <li><a class="dropdown-item-sub py-2 pr-4" href="#">ظروف و لوازم نگهداری</a>
+                                        </li>
+                                        <li><a class="dropdown-item-sub py-2 pr-4" href="#">لوازم بهداشتی و پوشاک</a>
+                                        </li>
                                     </ul>
                                 </li>
 
                                 <li class="nav-item dropdown">
-                                    <a class="dropdown-item dropdown-toggle py-3" href="#"
+                                    <a class="dropdown-item dropdown-item-mega dropdown-toggle py-3" href="#"
                                        id="navbarDropdown5"
                                        role="button" data-toggle="dropdown" aria-haspopup="true"
                                        aria-expanded="false">
                                         جوندگان
                                     </a>
-                                    <ul class="dropdown-menu sub-drop-main drop-5"
-                                        aria-labelledby="navbarDropdown5">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <ul class="dropdown-menu sub-drop-main sub-rodent"
+                                        aria-labelledby="navbarDropdown1">
+                                        <li><a class="dropdown-item-sub py-2 pr-4" href="#">غذای خشک</a></li>
+                                        <li><a class="dropdown-item-sub py-2 pr-4" href="#">کنسرو و پوچ</a></li>
+                                        <li><a class="dropdown-item-sub py-2 pr-4" href="#">تشویقی و مکمل</a></li>
+                                        <li><a class="dropdown-item-sub py-2 pr-4" href="#">اسباب بازی و جویدنی</a>
+                                        </li>
+                                        <li><a class="dropdown-item-sub py-2 pr-4" href="#">قلاده وبند</a></li>
+                                        <li><a class="dropdown-item-sub py-2 pr-4" href="#">ظروف و لوازم نگهداری</a>
+                                        </li>
+                                        <li><a class="dropdown-item-sub py-2 pr-4" href="#">لوازم بهداشتی و پوشاک</a>
+                                        </li>
                                     </ul>
                                 </li>
 
                                 <li class="nav-item dropdown">
-                                    <a class="dropdown-item dropdown-toggle py-3" href="#"
+                                    <a class="dropdown-item dropdown-item-mega dropdown-toggle py-3" href="#"
                                        id="navbarDropdown6"
                                        role="button" data-toggle="dropdown" aria-haspopup="true"
                                        aria-expanded="false">
                                         خزندگان
                                     </a>
-                                    <ul class="dropdown-menu sub-drop-main drop-6"
-                                        aria-labelledby="navbarDropdown6">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <ul class="dropdown-menu sub-drop-main sub-reptile"
+                                        aria-labelledby="navbarDropdown1">
+                                        <li><a class="dropdown-item-sub py-2 pr-4" href="#">غذای خشک</a></li>
+                                        <li><a class="dropdown-item-sub py-2 pr-4" href="#">کنسرو و پوچ</a></li>
+                                        <li><a class="dropdown-item-sub py-2 pr-4" href="#">تشویقی و مکمل</a></li>
+                                        <li><a class="dropdown-item-sub py-2 pr-4" href="#">اسباب بازی و جویدنی</a>
+                                        </li>
+                                        <li><a class="dropdown-item-sub py-2 pr-4" href="#">قلاده وبند</a></li>
+                                        <li><a class="dropdown-item-sub py-2 pr-4" href="#">ظروف و لوازم نگهداری</a>
+                                        </li>
+                                        <li><a class="dropdown-item-sub py-2 pr-4" href="#">لوازم بهداشتی و پوشاک</a>
+                                        </li>
                                     </ul>
                                 </li>
                             </ul>
@@ -235,27 +223,27 @@
                         <!--            </li>-->
                         <li class="nav-item dropdown px-3 d-none d-sm-block">
                             <div class="dropdown">
-                                <a class="btn btn-s dropdown-toggle" href="#" id="dropdownMenu2"
+                                <a class="btn btn-s nav-item-hover dropdown-toggle" href="#" id="dropdownMenu2"
                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <span class="small">خدمات شایان پت</span>
                                 </a>
-                                <div class="dropdown-menu top-menu-dropdown mx-auto" aria-labelledby="dropdownMenu2">
-                                    <a class="dropdown-item small py-2" href="#">
+                                <div class="dropdown-menu service-menu-dropdown mx-auto" aria-labelledby="dropdownMenu2">
+                                    <a class="dropdown-item-sub mr-4 py-2" href="#">
                                         رزرو دامپزشکی
                                     </a>
-                                    <a class="dropdown-item small py-2" href="#">
+                                    <a class="dropdown-item-sub mr-4 py-2" href="#">
                                         اعزام دامپزشک
                                     </a>
-                                    <a class="dropdown-item small py-2" href="#">
+                                    <a class="dropdown-item-sub mr-4 py-2" href="#">
                                         پانسیون پت شما
                                     </a>
-                                    <a class="dropdown-item small py-2" href="#">
+                                    <a class="dropdown-item-sub mr-4 py-2" href="#">
                                         مربی تربیتی سگ
                                     </a>
-                                    <a class="dropdown-item small py-2" href="#">
+                                    <a class="dropdown-item-sub mr-4 py-2" href="#">
                                         شست و شو و پیرایش
                                     </a>
-                                    <a class="dropdown-item small py-2" href="#">
+                                    <a class="dropdown-item-sub mr-4 py-2" href="#">
                                         عکاسی تخصصی
                                     </a>
                                 </div>
