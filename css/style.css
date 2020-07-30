@@ -819,6 +819,115 @@ h5.price-font {
     top: -96% !important;
     right: 131% !important;
 }
+/* page product*/
+
+.breadcrumb {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    list-style: none;
+    background-color: transparent !important;
+}
+
+.breadcrumb-item + .breadcrumb-item {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    display: inline-block;
+    padding-right: 0.3rem;
+    padding-left: 0.3rem;
+    color: #6c757d;
+    content: "/";
+}
+
+.breadcrumb-item a {
+    color: #696969;
+    font-size: 0.72rem;
+    font-weight: 400;
+}
+
+.breadcrumb-item a:hover {
+    color: #252525;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav > .nav.nav-tabs {
+
+    border: none;
+    color: #fff;
+    background: #e2e2e2;
+    border-radius: 0;
+
+}
+
+nav > div a.nav-item.nav-link {
+    border: none;
+    padding: 18px 25px;
+    color: #262626;
+    background: #e2e2e2;
+    border-radius: 0;
+}
+
+/*nav > div a.nav-item.nav-link,*/
+nav > div a.nav-item.nav-link.active {
+    border: none;
+    padding: 18px 25px;
+    color: #FFFFFF;
+    background: #2574a9;
+    border-radius: 0;
+}
+.nav-tabs .nav-item {
+    margin-bottom: 0 !important;
+}
+
+.tab-content {
+    background: #fdfdfd;
+    line-height: 25px;
+    border: none;
+    border-top: 2px solid #2574a9;
+    border-bottom: 2px solid #2574a9;
+    padding: 30px 25px;
+}
+
+nav > div a.nav-item.nav-link:hover,
+nav > div a.nav-item.nav-link:focus {
+    border: none;
+    background: #2574a9;
+    color: #fff;
+    border-radius: 0;
+    transition: background 0.20s linear;
+}
+
+.text-item-cat{
+    background-color: #f6f6f6;
+}
+.text-item-cat p{
+    padding: 7px 7px;
+}
+.row-box{
+    margin: 0 10px !important;
+}
+
+.zoom-text{
+    font-size: 0.80rem;
+    font-weight: 400;
+    color: #797979;
+}
+
+.xzoom2, .xzoom3, .xzoom4, .xzoom5 {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    margin-bottom: 0;
+}
+
+
 
 /*  media query  */
 
@@ -879,6 +988,8 @@ h5.price-font {
         top: 36px !important;
     }
 }
+
+
 
 /*// Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
