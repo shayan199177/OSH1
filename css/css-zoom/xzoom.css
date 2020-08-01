@@ -10,6 +10,8 @@
 .xzoom-container { 
   display: inline-block;
   float: right;
+  padding: 0;
+  width: inherit;
 }
 
 .xzoom-thumbs {
@@ -27,12 +29,12 @@
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
   -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
   box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);  
-  margin-bottom: 15px;  
+  margin-bottom: 15px;
 }
 
 /* Thumbs */
 .xzoom-gallery, .xzoom-gallery2, .xzoom-gallery3, .xzoom-gallery4, .xzoom-gallery5 { 
-  border: 1px solid #cecece; 
+  border: 1px solid #cecece;
   margin-left: 5px;
   margin-bottom: 10px;
   border-radius: 5px;
@@ -54,7 +56,7 @@
 .xzoom-preview {
   border: 1px solid #888;
   /*background: #2f4f4f;*/
-  background: #2574a9;
+  background: #f1c40f;
   box-shadow: -0px -0px 10px rgba(0,0,0,0.50);
 }
 
@@ -76,9 +78,9 @@
 
 /* Additional class that applied to thumb when it is active */
 .xactive {  
-  -webkit-box-shadow: 0px 0px 3px 0px rgba(74,169,210,1);
-  -moz-box-shadow: 0px 0px 3px 0px rgba(74,169,210,1);
-  box-shadow: 0px 0px 3px 0px rgba(74,169,210,1); 
+  /*-webkit-box-shadow: 0px 0px 3px 0px rgba(74,169,210,1);*/
+  /*-moz-box-shadow: 0px 0px 3px 0px rgba(74,169,210,1);*/
+  /*box-shadow: 0px 0px 3px 0px rgba(74,169,210,1);*/
   border: 1px solid #4aaad2;
   border-radius: 5px;
 }

@@ -42,18 +42,22 @@ a:hover {
     }
 }
 
-.smart-scroll{
+.smart-scroll {
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
     z-index: 1;
 }
-.scrolled-down{
-    transform:translateY(-100%); transition: all 0.4s ease-in-out;
+
+.scrolled-down {
+    transform: translateY(-100%);
+    transition: all 0.4s ease-in-out;
 }
-.scrolled-up{
-    transform:translateY(0); transition: all 0.4s ease-in-out;
+
+.scrolled-up {
+    transform: translateY(0);
+    transition: all 0.4s ease-in-out;
 }
 
 
@@ -147,10 +151,10 @@ a:hover {
 
 .humberger-menu {
     height: 30px;
-    width: 35px;
+    width: 30px;
     position: fixed;
-    right: 50px;
-    top: 100px;
+    right: 29px;
+    top: 7px;
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -406,10 +410,12 @@ a:hover {
     color: #3c3c3c;
     transition: all, 0.3s;
 }
-.top-padding-main{
-    height: 60px;
+
+.top-padding-main {
+    height: 47px;
     width: 100%;
 }
+
 .form-control {
     display: block;
     width: 100% !important;
@@ -819,6 +825,7 @@ h5.price-font {
     top: -96% !important;
     right: 131% !important;
 }
+
 /* page product*/
 
 .breadcrumb {
@@ -827,7 +834,7 @@ h5.price-font {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding: 0.75rem 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
     list-style: none;
     background-color: transparent !important;
 }
@@ -857,65 +864,111 @@ h5.price-font {
     font-weight: 600;
 }
 
-nav > .nav.nav-tabs {
 
+nav > div a.nav-item.nav-lin {
     border: none;
-    color: #fff;
-    background: #e2e2e2;
-    border-radius: 0;
-
-}
-
-nav > div a.nav-item.nav-link {
-    border: none;
-    padding: 18px 25px;
+    padding: 20px 60px;
     color: #262626;
     background: #e2e2e2;
     border-radius: 0;
 }
 
 /*nav > div a.nav-item.nav-link,*/
-nav > div a.nav-item.nav-link.active {
+nav > div a.nav-item.nav-lin.active {
     border: none;
-    padding: 18px 25px;
-    color: #FFFFFF;
-    background: #2574a9;
+    padding: 20px 60px;
+    color: #262626;
+    background: #f1c40f;
     border-radius: 0;
 }
+
 .nav-tabs .nav-item {
     margin-bottom: 0 !important;
 }
 
 .tab-content {
-    background: #fdfdfd;
+    background: white;
     line-height: 25px;
     border: none;
-    border-top: 2px solid #2574a9;
-    border-bottom: 2px solid #2574a9;
-    padding: 30px 25px;
+    border-top: 2px solid #f1c40f;
+    border-bottom: 2px solid #f1c40f;
 }
 
-nav > div a.nav-item.nav-link:hover,
-nav > div a.nav-item.nav-link:focus {
+nav > div a.nav-item.nav-lin:hover,
+nav > div a.nav-item.nav-lin:focus {
     border: none;
-    background: #2574a9;
-    color: #fff;
+    background: #f1c40f;
+    color: #262626;
     border-radius: 0;
     transition: background 0.20s linear;
 }
 
-.text-item-cat{
-    background-color: #f6f6f6;
-}
-.text-item-cat p{
-    padding: 7px 7px;
-}
-.row-box{
-    margin: 0 10px !important;
+.button-buy {
+    font-size: 1rem;
+    border-radius: 5px;
+    color: #fff;
+    overflow: hidden;
+    text-align: center;
+    background-color: #0f3cf1;
+    border: none;
+    padding: 10px 30px;
+    transition: all 0.2s ease-out;
 }
 
-.zoom-text{
-    font-size: 0.80rem;
+.button-buy:hover {
+    background-color: #1466ff;
+    color: white;
+}
+
+.card {
+    background-color: #f1f1f1;
+    max-width: 300px;
+}
+
+.card ul {
+    background-color: #9e0c0f;
+}
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    padding: 15px 0;
+}
+
+.text-item-cat {
+    background-color: #f6f6f6;
+}
+
+.text-item-cat p {
+    padding: 7px 7px;
+    font-size: 0.89rem;
+}
+
+.nav-tabs {
+    border-bottom: none;
+}
+
+.love-item{
+    font-size: 0.77rem;
+    color: #303030;
+}
+
+.toman-price-off-item {
+    color: #989da2 !important;
+    font-size: 1.14rem !important;
+    text-decoration: line-through;
+    font-weight: 400;
+}
+
+.price-font-item {
+    color: red;
+    font-weight: 500;
+    font-size: 1.8rem;
+    padding: 20px 15px 6px 15px;
+    text-align: left;
+}
+
+.zoom-text {
+    font-size: 0.77rem;
     font-weight: 400;
     color: #797979;
 }
@@ -924,10 +977,35 @@ nav > div a.nav-item.nav-link:focus {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
-    margin-bottom: 0;
+    margin-bottom: 20px;
+    width: inherit !important;
 }
 
+.xzoom-gallery4 {
+    width: 80px;
+}
 
+.breadcrumb-item.active {
+    color: #6c757d;
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+.box-image-item {
+    margin: 20px 0;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #edf1f5 !important;
+}
+
+.border-left {
+    border-left: 1px solid #edf1f5 !important;
+}
+
+.border-bottom-item {
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+}
 
 /*  media query  */
 
@@ -935,10 +1013,10 @@ nav > div a.nav-item.nav-link:focus {
 @media (max-width: 575.98px) {
     .humberger-menu {
         height: 30px;
-        width: 32px;
+        width: 30px;
         position: fixed;
         right: 29px;
-        top: 11px;
+        top: 7px;
         cursor: pointer;
         display: flex;
         flex-direction: column;
@@ -959,10 +1037,12 @@ nav > div a.nav-item.nav-link:focus {
         position: relative;
         transform: rotateZ(45deg) translate(-8px, -6px);
     }
+
     .h-nav-top {
         top: 88px;
     }
-    .user-menu-dropdown{
+
+    .user-menu-dropdown {
         top: 36px !important;
     }
 }
@@ -972,23 +1052,25 @@ nav > div a.nav-item.nav-link:focus {
     .h-nav-top {
         top: 88px;
     }
+
     .menu-service {
         width: 270px;
         border-radius: 0;
         background-color: #f1c40f;
         background-image: none;
     }
+
     .menu-category {
         width: 270px;
         border-radius: 0;
         background-color: #f1c40f;
         background-image: none;
     }
-    .user-menu-dropdown{
+
+    .user-menu-dropdown {
         top: 36px !important;
     }
 }
-
 
 
 /*// Medium devices (tablets, 768px and up)*/
@@ -996,10 +1078,12 @@ nav > div a.nav-item.nav-link:focus {
     .dropdown-menu {
         width: 750px;
     }
+
     .h-nav-top {
         top: 50px;
     }
-    .user-menu-dropdown{
+
+    .user-menu-dropdown {
         top: 36px !important;
     }
 }
