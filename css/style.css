@@ -909,14 +909,14 @@ nav > div a.nav-item.nav-lin:focus {
     color: #fff;
     overflow: hidden;
     text-align: center;
-    background-color: #0f3cf1;
+    background-color: #ef394e;
     border: none;
     padding: 10px 30px;
     transition: all 0.2s ease-out;
 }
 
 .button-buy:hover {
-    background-color: #1466ff;
+    background-color: #fc394e;
     color: white;
 }
 
@@ -950,6 +950,30 @@ nav > div a.nav-item.nav-lin:focus {
 .love-item{
     font-size: 0.77rem;
     color: #303030;
+}
+.sub-item-page{
+    font-size: 0.77rem;
+    color: #4c4c4c;
+}
+.cat-item-page{
+    color: #646464;
+}
+.text-item-page{
+    line-height: 2rem;
+    font-size: 0.9rem;
+}
+.sticky-bottom-img {
+    position: absolute;
+    bottom: 28px;
+}
+.sub-item-page::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    background: #ccc;
+    vertical-align: middle;
+    margin-left: 5px;
+    border-radius: 50%;
 }
 
 .toman-price-off-item {

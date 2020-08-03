@@ -255,6 +255,7 @@ $(function () {
 $(document).ready(function () {
     $(".xzoom").xzoom();
 });
+
 $.fn.xzoom.defaults = {
     position: 'left', //top, left, right, bottom, inside, lens, fullscreen, #ID
     mposition: 'inside', //inside, fullscreen

@@ -71,7 +71,7 @@
 .xzoom-loading {
   border-radius: 100%;
   opacity: .7;
-  background: url("../images/xloading.gif") no-repeat center center;
+  /*background: url("../images/xloading.gif") no-repeat center center;*/
   width: 48px;
   height: 48px;
 }
