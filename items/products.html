@@ -400,12 +400,12 @@
                     <p class="mt-2 sub-item-page text-justify"><i class="fas fa-check-circle ml-2"></i>نسبت متعادل امگا
                         ۳ و ۶ برای سلامت پوست و پوشش بدن</p>
                 </div>
-                <div class="col sticky-bottom-img">
-                    <img src="../img/index/1.jpg" alt="" class="my-2">
-                    <img src="../img/index/2.jpg" alt="" class="my-2 mr-2">
-                    <img src="../img/index/3.jpg" alt="" class="my-2 mr-2">
-                    <img src="../img/index/4.jpg" alt="" class="my-2 mr-xl-2 mr-lg-0">
-                </div>
+<!--                <div class="col sticky-bottom-img">-->
+<!--                    <img src="../img/index/1.jpg" alt="" class="my-2">-->
+<!--                    <img src="../img/index/2.jpg" alt="" class="my-2 mr-2">-->
+<!--                    <img src="../img/index/3.jpg" alt="" class="my-2 mr-2">-->
+<!--                    <img src="../img/index/4.jpg" alt="" class="my-2 mr-xl-2 mr-lg-0">-->
+<!--                </div>-->
             </div>
             <div class="col-3 mt-2">
                 <div class="card mt-5">
@@ -426,8 +426,13 @@
                         <a href="#" class="card-link love-item"><i class="fas fa-heart ml-2"></i>افزودن به علاقه
                             مندی</a>
                     </div>
-
                 </div>
+            </div>
+            <div class="col-12 text-center mb-3">
+                    <img src="../img/index/1.jpg" alt="" class="my-2 px-3">
+                    <img src="../img/index/2.jpg" alt="" class="my-2 px-3">
+                    <img src="../img/index/3.jpg" alt="" class="my-2 px-3">
+                    <img src="../img/index/4.jpg" alt="" class="my-2 px-3">
             </div>
         </div>
     </div>
@@ -512,25 +517,178 @@
                 <div class="tab-pane fade" id="nav-contact" role="tabpanel"
                      aria-labelledby="nav-contact-tab">
                     <div class="row">
-                        <div class="col-12 px-4 py-4 text-right">
-                            <p>شما هم می‌توانید در مورد این کالا نظر بدهید.</p>
-                            <p>برای ثبت نظر، لازم است ابتدا وارد حساب کاربری خود شوید. اگر این محصول را قبلا از
-                                دیجی‌کالا خریده باشید، نظر شما به عنوان مالک محصول ثبت خواهد شد.</p>
-                            <a href="#" class="">افزودن نظر جدید</a>
-                            <p>پس از عضویت در دیجی‌کلاب با ثبت نظر بر روی کالاهای خریداری شده ۵ امتیاز دریافت کنید.</p>
+                        <div class="col-4 px-4 py-4 text-right">
+                            <form>
+                                <div class="form-group">
+                                    <label for="exampleFormControlInput1">افزودن عنوان نظر</label>
+                                    <input class="form-control-textbox-item" type="text"
+                                           placeholder="عنوان نظر خود را بنویسید" id="exampleFormControlInput1">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1">امتیاز به محصول از 1 تا 5</label>
+                                    <select class="form-control-textbox-item" id="exampleFormControlSelect1">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleFormControlInput2"><i class="fas fa-check-circle ml-2 green-color"></i>نقاط قوت</label>
+                                    <input class="form-control-textbox-item" type="text"
+                                           id="exampleFormControlInput2">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleFormControlInput3"><i class="fas fa-check-circle ml-2 red-color"></i>نقاط ضعف</label>
+                                    <input class="form-control-textbox-item" type="text"
+                                            id="exampleFormControlInput3">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">متن نظر شما</label>
+                                    <textarea class="form-control-textbox-item form1" id="exampleFormControlTextarea1"
+                                              rows="3" placeholder="متن نظر خود را اینجا بنویسید..."></textarea>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-10">
+                                        <button type="submit" class="btn btn-primary">ثبت نظر</button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
-                        <div class="col-12 d-flex">
-                            <div class="mr-3">
-                                نظرات کاربران
+                        <div class="col-8 border-right">
+                            <div>
+                                <div class="d-flex my-3 border-bottom">
+                                    <div class="mr-3">
+                                        نظرات کاربران
+                                    </div>
+                                </div>
+                                <div class="text-right d-flex my-3">
+                                    <div class="box-comment-user">
+                                        آیدین خدادادی
+                                        <div class="small">
+                                            در تاریخ ۱۳ مرداد ۱۳۹۹
+                                        </div>
+                                    </div>
+                                    <div class="box-comment text-justify">
+                                        به نظرم بابت پولی که میدین کیفیت خوبی داره البته با توجه به این گرونی ها
+                                    </div>
+                                </div>
                             </div>
-                            <div class="mr-5">
-                               مرتب سازی بر اساس:
-                                <span class="mr-2">جدیدترین نظرها</span>
-                                <span class="mr-2">مفیدترین نظرها</span>
+                            <div>
+                                <div class="text-right d-flex my-3">
+                                    <div class="box-comment-user">
+                                        محمد شمس کیا
+                                        <div class="small">
+                                            در تاریخ 25 فروردین ۱۳۹۹
+                                        </div>
+                                    </div>
+                                    <div class="box-comment text-justify">
+                                        از نظر قیافه و آنتن دهی مناسب هست و ارزش خرید داره البته کیفیت بدنه پلاستیک خیلی
+                                        بالا نیست و ایستگاههای دیجیتالی را نمیگیره
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="text-right d-flex my-3">
+                                    <div class="box-comment-user">
+                                        محمد شمس کیا
+                                        <div class="small">
+                                            در تاریخ 25 فروردین ۱۳۹۹
+                                        </div>
+                                    </div>
+                                    <div class="box-comment text-justify">
+                                        سلام هر کی میخواد پولشو بریز دور بخره من خریدم با توجه به تعریفای که دوستان کرده
+                                        بودن ولی دو هفته بیشتر کار نکرد داخلش باطری شارژی داره که به علت زیاد موندن
+                                        رادیو در انبار باطری خالی کرده برای تعویض باطری حدود ۲۰۰ هزار تومان هزینه داره
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="text-right d-flex my-3">
+                                    <div class="box-comment-user">
+                                        محمد شمس کیا
+                                        <div class="small">
+                                            در تاریخ 25 فروردین ۱۳۹۹
+                                        </div>
+                                    </div>
+                                    <div class="box-comment text-justify">
+                                        به نظرم بابت پولی که میدین کیفیت خوبی داره البته با توجه به این گرونی ها
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="text-right d-flex my-3">
+                                    <div class="box-comment-user">
+                                        محمد شمس کیا
+                                        <div class="small">
+                                            در تاریخ 25 فروردین ۱۳۹۹
+                                        </div>
+                                    </div>
+                                    <div class="box-comment text-justify">
+                                        به نظرم بابت پولی که میدین کیفیت خوبی داره البته با توجه به این گرونی ها
+                                        <div>
+                                            <div><i class="fas fa-check-circle ml-2 red-color"></i>نقاط قوت:
+                                                <span>ندارد</span>
+                                            </div>
+                                            <div><i class="fas fa-check-circle ml-2 green-color"></i>نقاط ضعف:
+                                                <span>ندارد</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="text-right d-flex my-3">
+                                    <div class="box-comment-user">
+                                        محمد شمس کیا
+                                        <div class="small">
+                                            در تاریخ 25 فروردین ۱۳۹۹
+                                        </div>
+                                    </div>
+                                    <div class="box-comment text-justify">
+                                        سلام هر کی میخواد پولشو بریز دور بخره من خریدم با توجه به تعریفای که دوستان کرده
+                                        بودن ولی دو هفته بیشتر کار نکرد داخلش باطری شارژی داره که به علت زیاد موندن
+                                        رادیو در انبار باطری خالی کرده برای تعویض باطری حدود ۲۰۰ هزار تومان هزینه داره
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="text-right d-flex my-3">
+                                    <div class="box-comment-user">
+                                        محمد شمس کیا
+                                        <div class="small">
+                                            در تاریخ 25 فروردین ۱۳۹۹
+                                        </div>
+                                    </div>
+                                    <div class="box-comment text-justify">
+                                        به نظرم بابت پولی که میدین کیفیت خوبی داره البته با توجه به این گرونی ها
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="text-right d-flex my-3">
+                                    <div class="box-comment-user">
+                                        محمد شمس کیا
+                                        <div class="small">
+                                            در تاریخ 25 فروردین ۱۳۹۹
+                                        </div>
+                                    </div>
+                                    <div class="box-comment text-justify">
+                                        به نظرم بابت پولی که میدین کیفیت خوبی داره البته با توجه به این گرونی ها
+                                        <div>
+                                            <div><i class="fas fa-check-circle ml-2 red-color"></i>نقاط قوت:
+                                                <span>ندارد</span>
+                                            </div>
+                                            <div><i class="fas fa-check-circle ml-2 green-color"></i>نقاط ضعف:
+                                                <span>ندارد</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -539,167 +697,166 @@
 
 <!--same item-->
 <div class="container-fluid">
-    <div class="container">
-        <div class="col-12 pt-4">
-            <div class=" text-center">
-                <p class="a-shop-off">محصولات مشابه</p>
+    <div class="container bg-white my-3">
+        <div class="py-4">
+            <div class="text-right border-bottom">
+                <p class="h5">محصولات مرتبط</p>
             </div>
         </div>
-        <div class="col-12">
-            <div class="owl-carousel slider-offer item-slider-1 py-3">
-                <div class="card-category">
-                    <div class="category-h240">
-                        <div><a href="#"><img src="../img/fish/7.jpg" alt="shayanPet"
-                                              class="img-item mx-auto pt-3"></a>
-                        </div>
-                        <div class="category-w235 text-center">
-                            <a href="#" class="text-right text-decoration-none text-card">
-                                <h4 class="font-item-cat pt-2 pr-3 pl-3">غذای خشک سگ نوتری</h4>
-                                <h4 class="font-subitem-cat pt-2 pr-3 pl-3">غذای خشک سگ نوتری</h4>
-                            </a>
-                            <h5 class="price-font ">
-                                <div class="toman-price-off mb-2">۴۵۰,۰۰۰<span
-                                        class="badge badge-danger badge-pill mr-2 font-size-08rem-color-w">۲۳٪</span>
-                                </div>
-                                ۲۹۰,۰۰۰<span
-                                    class="toman-price">تومان</span></h5>
-                            <p class="text-center">
-                                <button class="hvr-fade mb-2 mb-md-3">افزودن به سبد خرید</button>
-                            </p>
-                        </div>
+        <div class="owl-carousel slider-page-item">
+            <div class="card-category">
+                <div class="category-h240 zoom-items-pageItem">
+                    <div><a href="#"><img src="../img/fish/7.jpg" alt="shayanPet"
+                                          class="img-item mx-auto pt-3"></a>
                     </div>
-                </div>
-                <div class="card-category">
-                    <div class="category-h240">
-                        <div><a href="#"><img src="../img/fish/8.jpg" alt="shayanPet"
-                                              class="img-item mx-auto pt-3"></a>
-                        </div>
-                        <div class="category-w235 text-center">
-                            <a href="#" class="text-right text-decoration-none text-card">
-                                <h4 class="font-item-cat pt-2 pr-3 pl-3">تانک آکواریوم با پایه چوبی</h4>
-                                <h4 class="font-subitem-cat pt-2 pr-3 pl-3">۱۰۰ تا ۲۰۰ لیتری</h4>
-                            </a>
-                            <h5 class="price-font">
-                                <div class="toman-price-off mb-2">۵۵۰,۰۰۰<span
-                                        class="badge badge-danger badge-pill mr-2 font-size-08rem-color-w">۲۳٪</span>
-                                </div>
-                                ۲۹۰,۰۰۰<span
-                                    class="toman-price">تومان</span></h5>
-                            <p class="text-center">
-                                <button class="hvr-fade mb-2 mb-md-3">افزودن به سبد خرید</button>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card-category">
-                    <div class="category-h240">
-                        <div><a href="#"><img src="../img/dog/2.jpg" alt="shayanPet" class="img-item mx-auto pt-3"></a>
-                        </div>
-                        <div class="category-w235 text-center">
-                            <a href="#" class="text-right text-decoration-none text-card">
-                                <h4 class="font-item-cat pt-2 pr-3 pl-3">غذای خشک سگ نوتری</h4>
-                                <h4 class="font-subitem-cat pt-2 pr-3 pl-3">غذای خشک سگ نوتری</h4>
-                            </a>
-                            <h5 class="price-font">
-                                <div class="toman-price-off mb-2">۷,۸۰۰,۰۰۰<span
-                                        class="badge badge-danger badge-pill mr-2 font-size-08rem-color-w">۲۳٪</span>
-                                </div>
-                                ۷,۰۹۰,۰۰۰<span
-                                    class="toman-price">تومان</span></h5>
-                            <p class="text-center">
-                                <button class="hvr-fade mb-2 mb-md-3">افزودن به سبد خرید</button>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-category">
-                    <div class="category-h240">
-                        <div><a href="#"><img src="../img/dog/3.jpg" alt="shayanPet" class="img-item mx-auto pt-3"></a>
-                        </div>
-                        <div class="category-w235 text-center">
-                            <a href="#" class="text-right text-decoration-none text-card">
-                                <h4 class="font-item-cat pt-2 pr-3 pl-3">غذای خشک سگ نوتری</h4>
-                                <h4 class="font-subitem-cat pt-2 pr-3 pl-3">غذای خشک سگ نوتری</h4>
-                            </a>
-                            <h5 class="price-font">
-                                <div class="toman-price-off mb-2">۷,۸۰۰,۰۰۰<span
-                                        class="badge badge-danger badge-pill mr-2 font-size-08rem-color-w">۲۳٪</span>
-                                </div>
-                                ۷,۰۹۰,۰۰۰<span
-                                    class="toman-price">تومان</span></h5>
-                            <p class="text-center">
-                                <button class="hvr-fade mb-2 mb-md-3">افزودن به سبد خرید</button>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-category">
-                    <div class="category-h240">
-                        <div><a href="#"><img src="../img/dog/4.jpg" alt="shayanPet" class="img-item mx-auto pt-3"></a>
-                        </div>
-                        <div class="category-w235 text-center">
-                            <a href="#" class="text-right text-decoration-none text-card">
-                                <h4 class="font-item-cat pt-2 pr-3 pl-3">غذای خشک سگ نوتری</h4>
-                                <h4 class="font-subitem-cat pt-2 pr-3 pl-3">غذای خشک سگ نوتری</h4>
-                            </a>
-                            <h5 class="price-font">
-                                <div class="toman-price-off mb-2">۷,۸۰۰,۰۰۰<span
-                                        class="badge badge-danger badge-pill mr-2 font-size-08rem-color-w">۲۳٪</span>
-                                </div>
-                                ۷,۰۹۰,۰۰۰<span
-                                    class="toman-price">تومان</span></h5>
-                            <p class="text-center">
-                                <button class="hvr-fade mb-2 mb-md-3">افزودن به سبد خرید</button>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-category">
-                    <div class="category-h240">
-                        <div><a href="#"><img src="../img/cat/1.jpg" alt="shayanPet" class="img-item mx-auto pt-3"></a>
-                        </div>
-                        <div class="category-w235 text-center">
-                            <a href="#" class="text-right text-decoration-none text-card">
-                                <h4 class="font-item-cat pt-2 pr-3 pl-3">غذای خشک سگ نوتری</h4>
-                                <h4 class="font-subitem-cat pt-2 pr-3 pl-3">غذای خشک سگ نوتری</h4>
-                            </a>
-                            <h5 class="price-font">
-                                <div class="toman-price-off mb-2">۷,۸۰۰,۰۰۰<span
-                                        class="badge badge-danger badge-pill mr-2 font-size-08rem-color-w">۲۳٪</span>
-                                </div>
-                                ۷,۰۹۰,۰۰۰<span
-                                    class="toman-price">تومان</span></h5>
-                            <p class="text-center">
-                                <button class="hvr-fade mb-2 mb-md-3">افزودن به سبد خرید</button>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card-category">
-                    <div class="category-h240">
-                        <div><a href="#"><img src="../img/cat/2.jpg" alt="shayanPet" class="img-item mx-auto pt-3"></a>
-                        </div>
-                        <div class="category-w235 text-center">
-                            <a href="#" class="text-right text-decoration-none text-card">
-                                <h4 class="font-item-cat pt-2 pr-3 pl-3">غذای خشک سگ نوتری</h4>
-                                <h4 class="font-subitem-cat pt-2 pr-3 pl-3">غذای خشک سگ نوتری</h4>
-                            </a>
-                            <h5 class="price-font">
-                                <div class="toman-price-off mb-2">۲۹۰,۰۰۰<span
-                                        class="badge badge-danger badge-pill mr-2 font-size-08rem-color-w">۲۳٪</span>
-                                </div>
-                                ۲۹۰,۰۰۰<span
-                                    class="toman-price">تومان</span></h5>
-                            <p class="text-center">
-                                <button class="hvr-fade mb-2 mb-md-3">افزودن به سبد خرید</button>
-                            </p>
-                        </div>
+                    <div class="category-w235 text-center">
+                        <a href="#" class="text-right text-decoration-none text-card">
+                            <h4 class="font-item-cat pt-2 pr-3 pl-3">غذای خشک سگ نوتری</h4>
+                            <h4 class="font-subitem-cat pt-2 pr-3 pl-3">غذای خشک سگ نوتری</h4>
+                        </a>
+                        <h5 class="price-font ">
+                            <div class="toman-price-off mb-2">۴۵۰,۰۰۰<span
+                                    class="badge badge-danger badge-pill mr-2 font-size-08rem-color-w">۲۳٪</span>
+                            </div>
+                            ۲۹۰,۰۰۰<span
+                                class="toman-price">تومان</span></h5>
+                        <p class="text-center">
+                            <button class="hvr-fade mb-2 mb-md-3">افزودن به سبد خرید</button>
+                        </p>
                     </div>
                 </div>
             </div>
+            <div class="card-category">
+                <div class="category-h240 zoom-items-pageItem">
+                    <div><a href="#"><img src="../img/fish/8.jpg" alt="shayanPet"
+                                          class="img-item mx-auto pt-3"></a>
+                    </div>
+                    <div class="category-w235 text-center">
+                        <a href="#" class="text-right text-decoration-none text-card">
+                            <h4 class="font-item-cat pt-2 pr-3 pl-3">تانک آکواریوم با پایه چوبی</h4>
+                            <h4 class="font-subitem-cat pt-2 pr-3 pl-3">۱۰۰ تا ۲۰۰ لیتری</h4>
+                        </a>
+                        <h5 class="price-font">
+                            <div class="toman-price-off mb-2">۵۵۰,۰۰۰<span
+                                    class="badge badge-danger badge-pill mr-2 font-size-08rem-color-w">۲۳٪</span>
+                            </div>
+                            ۲۹۰,۰۰۰<span
+                                class="toman-price">تومان</span></h5>
+                        <p class="text-center">
+                            <button class="hvr-fade mb-2 mb-md-3">افزودن به سبد خرید</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-category">
+                <div class="category-h240 zoom-items-pageItem">
+                    <div><a href="#"><img src="../img/dog/2.jpg" alt="shayanPet" class="img-item mx-auto pt-3"></a>
+                    </div>
+                    <div class="category-w235 text-center">
+                        <a href="#" class="text-right text-decoration-none text-card">
+                            <h4 class="font-item-cat pt-2 pr-3 pl-3">غذای خشک سگ نوتری</h4>
+                            <h4 class="font-subitem-cat pt-2 pr-3 pl-3">غذای خشک سگ نوتری</h4>
+                        </a>
+                        <h5 class="price-font">
+                            <div class="toman-price-off mb-2">۷,۸۰۰,۰۰۰<span
+                                    class="badge badge-danger badge-pill mr-2 font-size-08rem-color-w">۲۳٪</span>
+                            </div>
+                            ۷,۰۹۰,۰۰۰<span
+                                class="toman-price">تومان</span></h5>
+                        <p class="text-center">
+                            <button class="hvr-fade mb-2 mb-md-3">افزودن به سبد خرید</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-category">
+                <div class="category-h240 zoom-items-pageItem">
+                    <div><a href="#"><img src="../img/dog/3.jpg" alt="shayanPet" class="img-item mx-auto pt-3"></a>
+                    </div>
+                    <div class="category-w235 text-center">
+                        <a href="#" class="text-right text-decoration-none text-card">
+                            <h4 class="font-item-cat pt-2 pr-3 pl-3">غذای خشک سگ نوتری</h4>
+                            <h4 class="font-subitem-cat pt-2 pr-3 pl-3">غذای خشک سگ نوتری</h4>
+                        </a>
+                        <h5 class="price-font">
+                            <div class="toman-price-off mb-2">۷,۸۰۰,۰۰۰<span
+                                    class="badge badge-danger badge-pill mr-2 font-size-08rem-color-w">۲۳٪</span>
+                            </div>
+                            ۷,۰۹۰,۰۰۰<span
+                                class="toman-price">تومان</span></h5>
+                        <p class="text-center">
+                            <button class="hvr-fade mb-2 mb-md-3">افزودن به سبد خرید</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-category">
+                <div class="category-h240 zoom-items-pageItem">
+                    <div><a href="#"><img src="../img/dog/4.jpg" alt="shayanPet" class="img-item mx-auto pt-3"></a>
+                    </div>
+                    <div class="category-w235 text-center">
+                        <a href="#" class="text-right text-decoration-none text-card">
+                            <h4 class="font-item-cat pt-2 pr-3 pl-3">غذای خشک سگ نوتری</h4>
+                            <h4 class="font-subitem-cat pt-2 pr-3 pl-3">غذای خشک سگ نوتری</h4>
+                        </a>
+                        <h5 class="price-font">
+                            <div class="toman-price-off mb-2">۷,۸۰۰,۰۰۰<span
+                                    class="badge badge-danger badge-pill mr-2 font-size-08rem-color-w">۲۳٪</span>
+                            </div>
+                            ۷,۰۹۰,۰۰۰<span
+                                class="toman-price">تومان</span></h5>
+                        <p class="text-center">
+                            <button class="hvr-fade mb-2 mb-md-3">افزودن به سبد خرید</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-category">
+                <div class="category-h240 zoom-items-pageItem">
+                    <div><a href="#"><img src="../img/cat/1.jpg" alt="shayanPet" class="img-item mx-auto pt-3"></a>
+                    </div>
+                    <div class="category-w235 text-center">
+                        <a href="#" class="text-right text-decoration-none text-card">
+                            <h4 class="font-item-cat pt-2 pr-3 pl-3">غذای خشک سگ نوتری</h4>
+                            <h4 class="font-subitem-cat pt-2 pr-3 pl-3">غذای خشک سگ نوتری</h4>
+                        </a>
+                        <h5 class="price-font">
+                            <div class="toman-price-off mb-2">۷,۸۰۰,۰۰۰<span
+                                    class="badge badge-danger badge-pill mr-2 font-size-08rem-color-w">۲۳٪</span>
+                            </div>
+                            ۷,۰۹۰,۰۰۰<span
+                                class="toman-price">تومان</span></h5>
+                        <p class="text-center">
+                            <button class="hvr-fade mb-2 mb-md-3">افزودن به سبد خرید</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-category">
+                <div class="category-h240 zoom-items-pageItem">
+                    <div><a href="#"><img src="../img/cat/2.jpg" alt="shayanPet" class="img-item mx-auto pt-3"></a>
+                    </div>
+                    <div class="category-w235 text-center">
+                        <a href="#" class="text-right text-decoration-none text-card">
+                            <h4 class="font-item-cat pt-2 pr-3 pl-3">غذای خشک سگ نوتری</h4>
+                            <h4 class="font-subitem-cat pt-2 pr-3 pl-3">غذای خشک سگ نوتری</h4>
+                        </a>
+                        <h5 class="price-font">
+                            <div class="toman-price-off mb-2">۲۹۰,۰۰۰<span
+                                    class="badge badge-danger badge-pill mr-2 font-size-08rem-color-w">۲۳٪</span>
+                            </div>
+                            ۲۹۰,۰۰۰<span
+                                class="toman-price">تومان</span></h5>
+                        <p class="text-center">
+                            <button class="hvr-fade mb-2 mb-md-3">افزودن به سبد خرید</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
+
     </div>
 </div>
 
