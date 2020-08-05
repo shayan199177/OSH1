@@ -639,7 +639,7 @@ h5.price-font-small {
 
 .img-item {
     min-width: 115px !important;
-    max-width: fit-content;
+    max-width: 115px;
     padding: 0.4rem;
 }
 
@@ -933,7 +933,6 @@ nav > div a.nav-item.nav-lin:focus {
 
 .card {
     background-color: #f1f1f1;
-    max-width: 300px;
 }
 
 .card ul {
