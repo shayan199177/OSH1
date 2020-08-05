@@ -178,7 +178,7 @@ jQuery('.slider-offer').owlCarousel({
 jQuery('.slider-page-item').owlCarousel({
     rtl: true,
     loop: false,
-    margin: 20,
+    margin: 5,
     nav: true,
     autoplay: false,
     autoplayTimeout: 4500,

@@ -71,11 +71,22 @@ a:hover {
     box-shadow: none;
 }
 
-.input {
-    outline: none;
+input {
+    outline: none !important;
     box-shadow: none;
 }
-
+button{
+    outline: none !important;
+    box-shadow: none;
+}
+textarea{
+    outline: none !important;
+    box-shadow: none;
+}
+select{
+    outline: none !important;
+    box-shadow: none;
+}
 .btn:active {
     outline: none;
     box-shadow: none;
@@ -1048,12 +1059,12 @@ nav > div a.nav-item.nav-lin:focus {
     border: 1px solid #ced4da !important;
 }
 .form1{
-    height: 88px;
+    height: 125px;
     width: 100%;
     padding: 10px;
 }
 .form1:focus{
-    height: 88px;
+    height: 125px;
     width: 100%;
     padding: 10px;
 }
@@ -1079,15 +1090,13 @@ nav > div a.nav-item.nav-lin:focus {
 }
 .zoom-items-pageItem {
     transition: transform .2s; /* Animation */
-    margin: 10px;
 }
 
 .zoom-items-pageItem:hover {
     box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+    transform: translateY(-2px);
 }
-.slider-page-item .owl-item.active{
-    margin-left: 11px !important;
-}
+
 .slider-page-item button.owl-prev{
     width: 52px;
     height: 90px;
@@ -1095,10 +1104,11 @@ nav > div a.nav-item.nav-lin:focus {
     top: 33%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    background-color: #f5f5f538 !important;
+    background-color: #f1c40f !important;
     margin-right: -26px;
-    right: 10px;
+    right: 11px;
     left: auto;
+    border-radius: 5px;
 }
 .slider-page-item button.owl-next{
     width: 52px;
@@ -1107,11 +1117,33 @@ nav > div a.nav-item.nav-lin:focus {
     top: 33%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    background-color: #f5f5f538 !important;
+    background-color: #f1c40f !important;
     margin-right: -37px;
     right: auto;
+    border-radius: 5px;
 }
-
+.btn-choose-item.active{
+    background-color: #f1c40f !important;
+    border: none !important;
+    color: #1c1c1c !important;
+    border-radius: 0.25rem !important;
+    outline: none !important;
+}
+.btn-choose-item:focus{
+    background-color: #f1c40f !important;
+    border: none !important;
+    color: #1c1c1c !important;
+    border-radius: 0.25rem !important;
+    outline: none !important;
+}
+.btn-secondary {
+    color: #ffffff;
+    font-size: 0.79rem;
+    background-color: #9ba4ad;
+    border: none !important;
+    outline: none !important;
+    border-radius: 0.25rem !important;
+}
 /*  media query  */
 
 /*// Extra small devices (portrait phones, less than 576px)*/
