@@ -642,6 +642,37 @@ h5.price-font-small {
     max-width: 115px;
     padding: 0.4rem;
 }
+.star-gold{
+    color: gold;
+}
+.items-count{
+    background-color: #cbd4dd;
+    border: medium none;
+    color: #303030;
+    height: 30px;
+    line-height: 13px;
+    width: 30px;
+}
+.reduced{
+    border-bottom-right-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+.increase{
+    border-bottom-left-radius: 0.25rem;
+    border-top-left-radius: 0.25rem;
+}
+.number-item{
+    box-shadow: none;
+    float: left;
+    height: 30px;
+    margin-right: 0;
+    margin-top: 0;
+    text-align: center;
+    width: 30px !important;
+    background-color: #cbd4dd;
+    border: none;
+    font-weight: bold;
+}
 
 .category-w235 {
     width: 100%;
@@ -1136,9 +1167,9 @@ nav > div a.nav-item.nav-lin:focus {
     outline: none !important;
 }
 .btn-secondary {
-    color: #ffffff;
+    color: #303030;
     font-size: 0.79rem;
-    background-color: #9ba4ad;
+    background-color: #cbd4dd;
     border: none !important;
     outline: none !important;
     border-radius: 0.25rem !important;

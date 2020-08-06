@@ -365,22 +365,22 @@
                          xoriginal="../images/gallery/original/dog-food1.png" alt=""/>
                     <div class="xzoom-thumbs">
                         <a href="../images/gallery/original/dog-food1.png"><img class="xzoom-gallery4"
-                                                                               src="../images/gallery/preview/dog-food1.png"
-                                                                               alt=""></a>
+                                                                                src="../images/gallery/preview/dog-food1.png"
+                                                                                alt=""></a>
                         <a href="../images/gallery/original/dog-food2.png"><img class="xzoom-gallery4"
-                                                                               src="../images/gallery/preview/dog-food4.png"
-                                                                               alt=""></a>
+                                                                                src="../images/gallery/preview/dog-food4.png"
+                                                                                alt=""></a>
                         <a href="../images/gallery/original/dog-food4.png"><img class="xzoom-gallery4"
-                                                                               src="../images/gallery/preview/dog-food2.png"
-                                                                               alt=""></a>
+                                                                                src="../images/gallery/preview/dog-food2.png"
+                                                                                alt=""></a>
                         <a href="../images/gallery/original/dog-food3.png"><img class="xzoom-gallery4"
-                                                                               src="../images/gallery/preview/dog-food3.png"
-                                                                               alt=""></a>
+                                                                                src="../images/gallery/preview/dog-food3.png"
+                                                                                alt=""></a>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-5 text-right">
-                <p class="mr-4 mt-4 mb-2 font-weight-bold h5">غذای خشک سگ نوتری پت</p>
+                <p class="mr-4 mt-4 mb-2 font-weight-bold h5 d-none d-md-block">غذای خشک سگ نوتری پت</p>
                 <div class="mr-4 border-bottom"></div>
                 <div class="mr-4 small my-3 d-none d-lg-block">
                     <span class="px-1">برند:</span>
@@ -390,9 +390,9 @@
                 </div>
                 <div class="mr-4 small my-3 d-block d-lg-none">
                     <div class="px-1">برند:
-                    <a href="#" class="cat-item-page">نوتری پت</a></div>
+                        <a href="#" class="cat-item-page">نوتری پت</a></div>
                     <div class="px-1">دسته بندی محصول:
-                    <a href="#" class="cat-item-page">غذای خشک</a></div>
+                        <a href="#" class="cat-item-page">غذای خشک</a></div>
                 </div>
                 <div class="mr-4 ml-4 mt-2 mt-sm-5">
                     <p>ویژگی های محصول</p>
@@ -416,6 +416,24 @@
                         </div>
                         ۲۹۰,۰۰۰<span
                             class="toman-price">تومان</span>
+                    </div>
+                    <div class="mx-auto qty mt-3">
+                        <div class="d-flex justify-content-center">
+                            <label for="qty1" class="ml-2 small my-auto">تعداد:</label>
+                            <div class="custom-qty pull-left">
+                                <button type="button" class="reduced items  items-count"
+                                        onclick="var result = document.getElementById('qty1'); var qty = result.value; if( !isNaN( qty ) &amp;&amp; qty > 1 ) result.value--;return false;">
+                                    <i class="fa fa-minus small"></i>
+                                </button>
+                            </div>
+                            <input type="text" name="qty" id="qty1" maxlength="12" value="1" title="تعداد" class="number-item qty">
+                            <div class="custom-left-btn-item pull-left">
+                                <button type="button" class="increase items items-count"
+                                        onclick="var result = document.getElementById('qty1'); var qty = result.value; if( !isNaN( qty )) result.value++;return false;">
+                                    <i class="fa fa-plus small"></i>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                     <div class="text-center py-3">
                         <p class="card-link small">انتخاب وزن محصول:</p>
@@ -455,6 +473,24 @@
                         </div>
                         ۲۹۰,۰۰۰<span
                             class="toman-price">تومان</span>
+                    </div>
+                    <div class="mx-auto qty mt-3">
+                        <div class="d-flex justify-content-center">
+                            <label for="qty" class="ml-2 small my-auto">تعداد:</label>
+                            <div class="custom-qty pull-left">
+                                <button type="button" class="reduced items  items-count"
+                                        onclick="var result = document.getElementById('qty1'); var qty = result.value; if( !isNaN( qty ) &amp;&amp; qty > 1 ) result.value--;return false;">
+                                    <i class="fa fa-minus small"></i>
+                                </button>
+                            </div>
+                            <input type="text" name="qty" id="qty" maxlength="12" value="1" title="تعداد" class="number-item qty">
+                            <div class="custom-left-btn-item pull-left">
+                                <button type="button" class="increase items items-count"
+                                        onclick="var result = document.getElementById('qty1'); var qty = result.value; if( !isNaN( qty )) result.value++;return false;">
+                                    <i class="fa fa-plus small"></i>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                     <div class="text-center py-3">
                         <p class="card-link small">انتخاب وزن محصول:</p>
@@ -612,6 +648,16 @@
                                         <div class="small">
                                             در تاریخ ۱۳ مرداد ۱۳۹۹
                                         </div>
+                                        <div class="small">امتیاز به محصول:</div>
+                                        <div>
+                                                <span>
+                                                    <i class="fas fa-star star-gold"></i>
+                                                    <i class="fas fa-star star-gold"></i>
+                                                    <i class="fas fa-star star-gold"></i>
+                                                    <i class="fas fa-star star-gold"></i>
+                                                    <i class="fas fa-star star-gold"></i>
+                                                </span>
+                                        </div>
                                     </div>
                                     <div class="box-comment text-justify">
                                         به نظرم بابت پولی که میدین کیفیت خوبی داره البته با توجه به این گرونی ها
@@ -624,6 +670,15 @@
                                         محمد شمس کیا
                                         <div class="small">
                                             در تاریخ 25 فروردین ۱۳۹۹
+                                        </div>
+                                        <div class="small">امتیاز به محصول:</div>
+                                        <div>
+                                                <span>
+                                                    <i class="fas fa-star star-gold"></i>
+                                                    <i class="fas fa-star star-gold"></i>
+                                                    <i class="fas fa-star star-gold"></i>
+                                                    <i class="fas fa-star star-gold"></i>
+                                                </span>
                                         </div>
                                     </div>
                                     <div class="box-comment text-justify">
@@ -639,6 +694,73 @@
                                         <div class="small">
                                             در تاریخ 25 فروردین ۱۳۹۹
                                         </div>
+                                        <div class="small">امتیاز به محصول:</div>
+                                        <div>
+                                                <span>
+                                                    <i class="fas fa-star star-gold"></i>
+                                                    <i class="fas fa-star star-gold"></i>
+                                                    <i class="fas fa-star star-gold"></i>
+                                                </span>
+                                        </div>
+                                    </div>
+                                    <div class="box-comment text-justify">
+                                        سلام هر کی میخواد پولشو بریز دور بخره من خریدم با توجه به تعریفای که دوستان کرده
+                                        بودن ولی دو هفته بیشتر کار نکرد داخلش باطری شارژی داره که به علت زیاد موندن
+                                        رادیو در انبار باطری خالی کرده برای تعویض باطری حدود ۲۰۰ هزار تومان هزینه داره
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="text-right d-flex my-3">
+                                    <div class="box-comment-user">
+                                        محمد شمس کیا
+                                        <div class="small">
+                                            در تاریخ 25 فروردین ۱۳۹۹
+                                        </div>
+                                        <div class="small">امتیاز به محصول:</div>
+                                        <div>
+                                                <span>
+                                                    <i class="fas fa-star star-gold"></i>
+                                                    <i class="fas fa-star star-gold"></i>
+                                                </span>
+                                        </div>
+                                    </div>
+                                    <div class="box-comment text-justify">
+                                        به نظرم بابت پولی که میدین کیفیت خوبی داره البته با توجه به این گرونی ها
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="text-right d-flex my-3">
+                                    <div class="box-comment-user">
+                                        محمد شمس کیا
+                                        <div class="small">
+                                            در تاریخ 25 فروردین ۱۳۹۹
+                                        </div>
+                                        <div class="small">امتیاز به محصول:</div>
+                                        <div>
+                                                <span>
+                                                    <i class="fas fa-star star-gold"></i>
+                                                    <i class="fas fa-star star-gold"></i>
+                                                    <i class="fas fa-star star-gold"></i>
+                                                    <i class="fas fa-star star-gold"></i>
+                                                    <i class="fas fa-star star-gold"></i>
+                                                </span>
+                                        </div>
+                                    </div>
+                                    <div class="box-comment text-justify">
+                                        به نظرم بابت پولی که میدین کیفیت خوبی داره البته با توجه به این گرونی ها
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="text-right d-flex my-3">
+                                    <div class="box-comment-user">
+                                        محمد شمس کیا
+                                        <div class="small">
+                                            در تاریخ 25 فروردین ۱۳۹۹
+                                        </div>
                                     </div>
                                     <div class="box-comment text-justify">
                                         سلام هر کی میخواد پولشو بریز دور بخره من خریدم با توجه به تعریفای که دوستان کرده
@@ -667,60 +789,19 @@
                                         <div class="small">
                                             در تاریخ 25 فروردین ۱۳۹۹
                                         </div>
-                                    </div>
-                                    <div class="box-comment text-justify">
-                                        به نظرم بابت پولی که میدین کیفیت خوبی داره البته با توجه به این گرونی ها
+                                        <div class="small">امتیاز به محصول:</div>
                                         <div>
-                                            <div><i class="fas fa-check-circle ml-2 green-color"></i>امتیاز به محصول:
-                                                <span>5</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="text-right d-flex my-3">
-                                    <div class="box-comment-user">
-                                        محمد شمس کیا
-                                        <div class="small">
-                                            در تاریخ 25 فروردین ۱۳۹۹
-                                        </div>
-                                    </div>
-                                    <div class="box-comment text-justify">
-                                        سلام هر کی میخواد پولشو بریز دور بخره من خریدم با توجه به تعریفای که دوستان کرده
-                                        بودن ولی دو هفته بیشتر کار نکرد داخلش باطری شارژی داره که به علت زیاد موندن
-                                        رادیو در انبار باطری خالی کرده برای تعویض باطری حدود ۲۰۰ هزار تومان هزینه داره
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="text-right d-flex my-3">
-                                    <div class="box-comment-user">
-                                        محمد شمس کیا
-                                        <div class="small">
-                                            در تاریخ 25 فروردین ۱۳۹۹
+                                                <span>
+                                                    <i class="fas fa-star star-gold"></i>
+                                                    <i class="fas fa-star star-gold"></i>
+                                                    <i class="fas fa-star star-gold"></i>
+                                                    <i class="fas fa-star star-gold"></i>
+                                                    <i class="fas fa-star star-gold"></i>
+                                                </span>
                                         </div>
                                     </div>
                                     <div class="box-comment text-justify">
                                         به نظرم بابت پولی که میدین کیفیت خوبی داره البته با توجه به این گرونی ها
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="text-right d-flex my-3">
-                                    <div class="box-comment-user">
-                                        محمد شمس کیا
-                                        <div class="small">
-                                            در تاریخ 25 فروردین ۱۳۹۹
-                                        </div>
-                                    </div>
-                                    <div class="box-comment text-justify">
-                                        به نظرم بابت پولی که میدین کیفیت خوبی داره البته با توجه به این گرونی ها
-                                        <div>
-                                            <div><i class="fas fa-check-circle ml-2 green-color"></i>امتیاز به محصول:
-                                                <span>5</span>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
