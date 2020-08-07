@@ -651,8 +651,8 @@ h5.price-font-small {
     color: gold;
 }
 .items-count{
-    background-color: #cbd4dd;
-    border: medium none;
+    background-color: #f1c40f;
+    border:none;
     color: #303030;
     height: 30px;
     line-height: 13px;
@@ -668,15 +668,13 @@ h5.price-font-small {
 }
 .number-item{
     box-shadow: none;
-    float: left;
     height: 30px;
     margin-right: 0;
     margin-top: 0;
     text-align: center;
     width: 30px !important;
-    background-color: #cbd4dd;
+    background-color: #ffffff;
     border: none;
-    font-weight: bold;
     border-radius: 0 !important;
 }
 
@@ -1107,7 +1105,6 @@ nav > div a.nav-item.nav-lin:focus {
 .box-comment{
     background: #f3f5f7;
     padding: 14px;
-    margin: 0 30px 0 0;
     font-size: 0.9rem;
     width: 100%;
     height: auto;
@@ -1115,7 +1112,6 @@ nav > div a.nav-item.nav-lin:focus {
 .box-comment-user{
     width: 171px;
     padding: 0;
-    margin: 0 20px;
     font-size: 0.82rem;
 }
 .red-color{
@@ -1140,7 +1136,7 @@ nav > div a.nav-item.nav-lin:focus {
     top: 33%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    background-color: #f1c40f !important;
+    background-color: transparent !important;
     margin-right: -26px;
     right: 11px;
     left: auto;
@@ -1153,10 +1149,16 @@ nav > div a.nav-item.nav-lin:focus {
     top: 33%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    background-color: #f1c40f !important;
+    background-color: transparent !important;
     margin-right: -37px;
     right: auto;
     border-radius: 5px;
+}
+.slider-page-item button.owl-next i{
+    color: gold;
+}
+.slider-page-item button.owl-prev i{
+    color: gold;
 }
 .btn-choose-item.active{
     background-color: #f1c40f !important;

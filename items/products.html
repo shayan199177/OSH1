@@ -460,17 +460,17 @@
                     </div>
                     <div class="mx-auto qty mt-3">
                         <div class="d-flex justify-content-center">
-                            <label for="qty" class="ml-2 small my-auto">تعداد:</label>
+                            <label for="qty2" class="ml-2 small my-auto">تعداد:</label>
                             <div class="custom-qty pull-left">
                                 <button type="button" class="reduced items  items-count"
-                                        onclick="var result = document.getElementById('qty1'); var qty = result.value; if( !isNaN( qty ) &amp;&amp; qty > 1 ) result.value--;return false;">
+                                        onclick="var result = document.getElementById('qty2'); var qty = result.value; if( !isNaN( qty ) &amp;&amp; qty > 1 ) result.value--;return false;">
                                     <i class="fa fa-minus small"></i>
                                 </button>
                             </div>
-                            <input type="text" name="qty" id="qty" maxlength="12" value="1" title="تعداد" class="number-item qty">
+                            <input type="text" name="qty" id="qty2" maxlength="12" value="1" title="تعداد" class="number-item qty">
                             <div class="custom-left-btn-item pull-left">
                                 <button type="button" class="increase items items-count"
-                                        onclick="var result = document.getElementById('qty1'); var qty = result.value; if( !isNaN( qty )) result.value++;return false;">
+                                        onclick="var result = document.getElementById('qty2'); var qty = result.value; if( !isNaN( qty )) result.value++;return false;">
                                     <i class="fa fa-plus small"></i>
                                 </button>
                             </div>
@@ -1072,12 +1072,15 @@
 <script src="../js/jquery.slicknav.js"></script>
 <script src="../js/mixitup.min.js"></script>
 <script src="../js/owl.carousel.min.js"></script>
-<script src="../js/main.js"></script>
-<script src="../js/js-zoom/vendor/modernizr.js"></script>
-<script src="../js/js-zoom/vendor/jquery.js"></script>
-<script type="text/javascript" src="../js/js-zoom/xzoom.min.js"></script>
-<script type="text/javascript" src="../js/js-zoom/hammer.js/1.0.5/jquery.hammer.min.js"></script>
+<!--<script src="../js/js-zoom/vendor/modernizr.js"></script>-->
 <script type="text/javascript" src="../js/js-zoom/fancybox/source/jquery.fancybox.js"></script>
+<script type="text/javascript" src="../js/js-zoom/setup.js"></script>
+<script type="text/javascript" src="../js/js-zoom/xzoom.min.js"></script>
+<script type="text/javascript" src="../js/js-zoom/vendor/placeholder.js"></script>
+<script type="text/javascript" src="../js/js-zoom/vendor/fastclick.js"></script>
+<script type="text/javascript" src="../js/js-zoom/vendor/jquery.cookie.js"></script>
+<!--<script type="text/javascript" src="../js/js-zoom/hammer.js/1.0.5/jquery.hammer.min.js"></script>-->
 <script src="../js/js-zoom/setup.js"></script>
+<script src="../js/main.js"></script>
 </body>
 </html>
