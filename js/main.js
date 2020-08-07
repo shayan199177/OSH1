@@ -235,9 +235,9 @@ jQuery('.slider-top').owlCarousel({
     }
 });
 
-$(function () {
-    $("#bootnavbar").bootnavbar();
-});
+// $(function () {
+//     $("#bootnavbar").bootnavbar();
+// });
 
 (function($) {
     var defaults={
@@ -286,37 +286,37 @@ $(document).ready(function () {
     $(".xzoom").xzoom();
 });
 
-$.fn.xzoom.defaults = {
-    position: 'left', //top, left, right, bottom, inside, lens, fullscreen, #ID
-    mposition: 'inside', //inside, fullscreen
-    rootOutput: true,
-    Xoffset: 0,
-    Yoffset: 0,
-    fadeIn: true,
-    fadeTrans: false,
-    fadeOut: true,
-    smoothZoomMove: 3,
-    smoothLensMove: 1,
-    smoothScale: 0,
-    defaultScale: 0, //from -1 to 1, that means -100% till 100% scale
-    scroll: false,
-    tint: false, //'#color'
-    tintOpacity: 0.0,
-    lens: false, //'#color'
-    lensOpacity: 0.0,
-    lensShape: 'box', //'box', 'circle'
-    zoomWidth: 'auto',
-    zoomHeight: 'auto',
-    sourceClass: 'xzoom-source',
-    loadingClass: 'xzoom-loading',
-    lensClass: 'xzoom-lens',
-    zoomClass: 'xzoom-preview',
-    activeClass: 'xactive',
-    hover: false,
-    adaptive: true,
-    lensReverse: false,
-    adaptiveReverse: false,
-    title: false,
-    titleClass: 'xzoom-caption',
-    bg: false //zoom image output as background
-};
+// $.fn.xzoom.defaults = {
+//     // position: 'left', //top, left, right, bottom, inside, lens, fullscreen, #ID
+//     // mposition: 'inside', //inside, fullscreen
+//     rootOutput: true,
+//     // Xoffset: 0,
+//     // Yoffset: 0,
+//     fadeIn: true,
+//     fadeTrans: false,
+//     fadeOut: true,
+//     smoothZoomMove: 3,
+//     smoothLensMove: 1,
+//     smoothScale: 0,
+//     defaultScale: 0, //from -1 to 1, that means -100% till 100% scale
+//     scroll: false,
+//     tint: false, //'#color'
+//     tintOpacity: 0.0,
+//     lens: false, //'#color'
+//     lensOpacity: 0.0,
+//     lensShape: 'box', //'box', 'circle'
+//     zoomWidth: 'auto',
+//     zoomHeight: 'auto',
+//     sourceClass: 'xzoom-source',
+//     loadingClass: 'xzoom-loading',
+//     lensClass: 'xzoom-lens',
+//     zoomClass: 'xzoom-preview',
+//     activeClass: 'xactive',
+//     hover: false,
+//     adaptive: true,
+//     lensReverse: false,
+//     adaptiveReverse: false,
+//     title: false,
+//     // titleClass: 'xzoom-caption',
+//     // bg: false //zoom image output as background
+// };
