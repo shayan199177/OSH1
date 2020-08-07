@@ -273,9 +273,9 @@ select{
     background-image: url(../img/menu/mega-menu.png);
     background-repeat: no-repeat;
     transform: none !important;
-    -webkit-box-shadow: 0px 32px 83px -28px rgba(0, 0, 0, 0.16);
-    -moz-box-shadow: 0px 32px 83px -28px rgba(0, 0, 0, 0.16);
-    box-shadow: 0px 32px 83px -28px rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: 0 32px 83px -28px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0 32px 83px -28px rgba(0, 0, 0, 0.16);
+    box-shadow: 0 32px 83px -28px rgba(0, 0, 0, 0.16);
 }
 
 .menu-category {
@@ -297,9 +297,9 @@ select{
     background-image: url(../img/menu/mega-menu.png);
     background-repeat: no-repeat;
     transform: none !important;
-    -webkit-box-shadow: 0px 32px 83px -28px rgba(0, 0, 0, 0.16);
-    -moz-box-shadow: 0px 32px 83px -28px rgba(0, 0, 0, 0.16);
-    box-shadow: 0px 32px 83px -28px rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: 0 32px 83px -28px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0 32px 83px -28px rgba(0, 0, 0, 0.16);
+    box-shadow: 0 32px 83px -28px rgba(0, 0, 0, 0.16);
 }
 
 .dropdown-item:focus, .dropdown-item:hover {
@@ -677,6 +677,7 @@ h5.price-font-small {
     background-color: #cbd4dd;
     border: none;
     font-weight: bold;
+    border-radius: 0 !important;
 }
 
 .category-w235 {
