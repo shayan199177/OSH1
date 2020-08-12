@@ -48,7 +48,9 @@ textarea:focus, select:focus {
 }
 
 .smart-scroll {
-    position: fixed;
+    position: sticky;
+    position: -webkit-sticky;
+    position: -ms-device-fixed;
     top: 0;
     right: 0;
     left: 0;
