@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <!--    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <title>shayanpet | فروشگاه اینترنتی شایان پت</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
           integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
@@ -428,18 +428,21 @@
                     <div class="mx-auto qty mt-3">
                         <div class="d-flex justify-content-center">
                             <label for="qty1" class="ml-2 small my-auto">تعداد:</label>
-                            <div class="custom-qty pull-left">
-                                <button type="button" class="reduced items  items-count"
-                                        onclick="var result = document.getElementById('qty1'); var qty = result.value; if( !isNaN( qty ) &amp;&amp; qty > 1 ) result.value--;return false;">
-                                    <i class="fa fa-minus small"></i>
-                                </button>
-                            </div>
-                            <input type="text" name="qty" id="qty1" maxlength="12" value="1" title="تعداد" class="number-item qty">
-                            <div class="custom-left-btn-item pull-left">
-                                <button type="button" class="increase items items-count"
-                                        onclick="var result = document.getElementById('qty1'); var qty = result.value; if( !isNaN( qty )) result.value++;return false;">
-                                    <i class="fa fa-plus small"></i>
-                                </button>
+                            <div class="number-down-up">
+                                <div class="custom-qty pull-left">
+                                    <button type="button" class="increase items items-count"
+                                            onclick="var result = document.getElementById('qty1'); var qty = result.value; if( !isNaN( qty )) result.value++;return false;">
+                                        <i class="fa fa-plus small"></i>
+                                    </button>
+                                </div>
+                                <input type="text" name="qty" id="qty1" maxlength="12" value="1" title="تعداد"
+                                       class="number-item qty">
+                                <div class="custom-left-btn-item pull-left">
+                                    <button type="button" class="reduced items  items-count"
+                                            onclick="var result = document.getElementById('qty1'); var qty = result.value; if( !isNaN( qty ) &amp;&amp; qty > 1 ) result.value--;return false;">
+                                        <i class="fa fa-minus small"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -468,18 +471,21 @@
                     <div class="mx-auto qty mt-3">
                         <div class="d-flex justify-content-center">
                             <label for="qty2" class="ml-2 small my-auto">تعداد:</label>
-                            <div class="custom-qty pull-left">
-                                <button type="button" class="reduced items  items-count"
-                                        onclick="var result = document.getElementById('qty2'); var qty = result.value; if( !isNaN( qty ) &amp;&amp; qty > 1 ) result.value--;return false;">
-                                    <i class="fa fa-minus small"></i>
-                                </button>
-                            </div>
-                            <input type="text" name="qty" id="qty2" maxlength="12" value="1" title="تعداد" class="number-item qty">
-                            <div class="custom-left-btn-item pull-left">
-                                <button type="button" class="increase items items-count"
-                                        onclick="var result = document.getElementById('qty2'); var qty = result.value; if( !isNaN( qty )) result.value++;return false;">
-                                    <i class="fa fa-plus small"></i>
-                                </button>
+                            <div class="number-down-up">
+                                <div class="custom-qty pull-left">
+                                    <button type="button" class="increase items items-count"
+                                            onclick="var result = document.getElementById('qty2'); var qty = result.value; if( !isNaN( qty )) result.value++;return false;">
+                                        <i class="fa fa-plus small"></i>
+                                    </button>
+                                </div>
+                                <input type="text" name="qty" id="qty2" maxlength="12" value="1" title="تعداد"
+                                       class="number-item qty">
+                                <div class="custom-left-btn-item pull-left">
+                                    <button type="button" class="reduced items  items-count"
+                                            onclick="var result = document.getElementById('qty2'); var qty = result.value; if( !isNaN( qty ) &amp;&amp; qty > 1 ) result.value--;return false;">
+                                        <i class="fa fa-minus small"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
