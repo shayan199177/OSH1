@@ -280,12 +280,12 @@ select{
 
 .menu-category {
     position: absolute;
-    top: 39px !important;
+    top: 33px !important;
     right: -2px !important;
     z-index: 1000;
     display: none;
     float: right;
-    width: 750px;
+    width: 100vh;
     height: auto;
     padding: .5rem 0;
     font-size: 0.899rem;
@@ -293,8 +293,8 @@ select{
     list-style: none;
     border: none !important;
     border-radius: 0;
-    background-color: #f1c40f;
-    background-image: url(../img/menu/mega-menu.png);
+    background-color: #ffc107eb;
+    /* background-image: url(../img/menu/mega-menu.png); */
     background-repeat: no-repeat;
     transform: none !important;
     -webkit-box-shadow: 0 32px 83px -28px rgba(0, 0, 0, 0.16);
@@ -1068,6 +1068,10 @@ nav > div a.nav-item.nav-lin:focus {
     border-bottom: 1px solid #edf1f5 !important;
 }
 
+.border-top{
+    border-top: 1px solid #edf1f5 !important;
+}
+
 .border-left {
     border-left: 1px solid #edf1f5 !important;
 }
@@ -1130,35 +1134,40 @@ nav > div a.nav-item.nav-lin:focus {
 }
 
 .slider-page-item button.owl-prev{
-    width: 52px;
+    width: 46px;
     height: 90px;
     position: absolute;
     top: 33%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     background-color: transparent !important;
-    margin-right: -26px;
-    right: 11px;
+    margin-right: -43px;
+    right: 13px;
     left: auto;
     border-radius: 5px;
 }
 .slider-page-item button.owl-next{
-    width: 52px;
+    width: 45px;
     height: 90px;
     position: absolute;
     top: 33%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     background-color: transparent !important;
-    margin-right: -37px;
+    margin-right: -17px;
     right: auto;
     border-radius: 5px;
 }
+.bottom-0{
+    bottom: 0;
+}
 .slider-page-item button.owl-next i{
     color: gold;
+    font-size: 55px;
 }
 .slider-page-item button.owl-prev i{
     color: gold;
+    font-size: 55px;
 }
 .btn-choose-item.active{
     background-color: #f1c40f !important;
@@ -1182,6 +1191,9 @@ nav > div a.nav-item.nav-lin:focus {
     outline: none !important;
     border-radius: 0.25rem !important;
 }
+.card-category{
+    padding: 13px 22px !important;
+}
 /*  media query  */
 
 /*// Extra small devices (portrait phones, less than 576px)*/
@@ -1196,6 +1208,7 @@ nav > div a.nav-item.nav-lin:focus {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        z-index: 6060;
     }
 
     .change .line-1 {

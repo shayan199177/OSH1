@@ -41,43 +41,43 @@
                 });
             });
 
-        $('.xzoom4').each(function() {
-            var xzoom = $(this).data('xzoom');
-            $(this).hammer().on("tap", function(event) {
-                event.pageX = event.gesture.center.pageX;
-                event.pageY = event.gesture.center.pageY;
-                var s = 1, ls;
-
-                xzoom.eventmove = function(element) {
-                    element.hammer().on('drag', function(event) {
-                        event.pageX = event.gesture.center.pageX;
-                        event.pageY = event.gesture.center.pageY;
-                        xzoom.movezoom(event);
-                        event.gesture.preventDefault();
-                    });
-                }
-
-                var counter = 0;
-                xzoom.eventclick = function(element) {
-                    element.hammer().on('tap', function() {
-                        counter++;
-                        if (counter == 1) setTimeout(openfancy,300);
-                        event.gesture.preventDefault();
-                    });
-                }
-
-                function openfancy() {
-                    if (counter == 2) {
-                        xzoom.closezoom();
-                        $.fancybox.open(xzoom.gallery().cgallery);
-                    } else {
-                        xzoom.closezoom();
-                    }
-                    counter = 0;
-                }
-            xzoom.openzoom(event);
-            });
-        });
+        // $('.xzoom4').each(function() {
+        //     var xzoom = $(this).data('xzoom');
+        //     $(this).hammer().on("tap", function(event) {
+        //         event.pageX = event.gesture.center.pageX;
+        //         event.pageY = event.gesture.center.pageY;
+        //         var s = 1, ls;
+        //
+        //         xzoom.eventmove = function(element) {
+        //             element.hammer().on('drag', function(event) {
+        //                 event.pageX = event.gesture.center.pageX;
+        //                 event.pageY = event.gesture.center.pageY;
+        //                 xzoom.movezoom(event);
+        //                 event.gesture.preventDefault();
+        //             });
+        //         }
+        //
+        //         var counter = 0;
+        //         xzoom.eventclick = function(element) {
+        //             element.hammer().on('tap', function() {
+        //                 counter++;
+        //                 if (counter == 1) setTimeout(openfancy,300);
+        //                 event.gesture.preventDefault();
+        //             });
+        //         }
+        //
+        //         function openfancy() {
+        //             if (counter == 2) {
+        //                 xzoom.closezoom();
+        //                 $.fancybox.open(xzoom.gallery().cgallery);
+        //             } else {
+        //                 xzoom.closezoom();
+        //             }
+        //             counter = 0;
+        //         }
+        //     xzoom.openzoom(event);
+        //     });
+        // });
         
         $('.xzoom5').each(function() {
             var xzoom = $(this).data('xzoom');
