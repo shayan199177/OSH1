@@ -50,11 +50,8 @@ textarea:focus, select:focus {
 .smart-scroll {
     position: sticky;
     position: -webkit-sticky;
-    position: -ms-device-fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1;
+    top: 65px;
+    z-index: 1010;
 }
 
 .scrolled-down {
@@ -119,6 +116,9 @@ select{
     box-shadow: none;
 }
 
+.basket{
+    height: 30px;
+}
 .w100 {
     width: 100%;
     padding-right: 0;
@@ -140,9 +140,30 @@ select{
     font-size: 1rem;
 }
 
-.btn-s {
+#btn-s {
     padding: 0 !important;
     border: none !important;
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 10px; /* Place the button at the bottom of the page */
+    left: 20px; /* Place the button 30px from the right */
+    z-index: 999; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #f1c40f; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 10px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 1rem; /* Increase font size */
+    transition: all 0.2s ease-out;
+}
+
+.myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
 }
 
 .i-top {
@@ -160,7 +181,7 @@ select{
     align-items: center;
     text-align: center;
     transition: right 0.8s cubic-bezier(1, 0, 0, 1);
-    z-index: 10;
+    z-index: 1990;
 }
 
 .change {
@@ -170,13 +191,13 @@ select{
 .humberger-menu {
     height: 30px;
     width: 30px;
-    position: fixed;
     right: 29px;
     top: 7px;
     cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    z-index: 77990;
 }
 
 .line {
@@ -258,12 +279,12 @@ select{
 
 .menu-service {
     position: absolute;
-    top: 39px !important;
+    top: 41px !important;
     right: -2px !important;
     z-index: 1000;
     display: none;
     float: right;
-    width: 750px;
+    width: 100vh;
     height: auto;
     padding: .5rem 0;
     font-size: 0.899rem;
@@ -271,8 +292,8 @@ select{
     list-style: none;
     border: none !important;
     border-radius: 0;
-    background-color: #f1c40f;
-    background-image: url(../img/menu/mega-menu.png);
+    background-color: #ffc107eb;
+    /* background-image: url(../img/menu/mega-menu.png); */
     background-repeat: no-repeat;
     transform: none !important;
     -webkit-box-shadow: 0 32px 83px -28px rgba(0, 0, 0, 0.16);
@@ -282,7 +303,7 @@ select{
 
 .menu-category {
     position: absolute;
-    top: 33px !important;
+    top: 39px !important;
     right: -2px !important;
     z-index: 1000;
     display: none;
@@ -494,9 +515,9 @@ select{
 }
 
 .h-nav-top {
-    height: 45px;
-    top: 67px;
-    z-index: 1010;
+    height: 50px;
+    /* top: 67px; */
+    /* z-index: 1010; */
     width: 100%;
 }
 
@@ -1230,6 +1251,7 @@ nav > div a.nav-item.nav-lin:focus {
 .card-category{
     padding: 13px 22px !important;
 }
+
 /*  media query  */
 
 /*// Extra small devices (portrait phones, less than 576px)*/
@@ -1239,7 +1261,7 @@ nav > div a.nav-item.nav-lin:focus {
         width: 30px;
         position: fixed;
         right: 29px;
-        top: 7px;
+        top: 11px;
         cursor: pointer;
         display: flex;
         flex-direction: column;
