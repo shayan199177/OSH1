@@ -4,14 +4,14 @@ menuIcon.addEventListener("click" ,() => {
     navbar.classList.toggle("change");
 });
 
-$(document).ready(function () {
-    $(".dropdown, .btn-group").hover(function () {
-        var dropdownMenu = $(this).children(".dropdown-menu");
-        if (dropdownMenu.is(":visible")) {
-            dropdownMenu.parent().toggleClass("open");
-        }
-    });
-});
+// $(document).ready(function () {
+//     $(".dropdown, .btn-group").hover(function () {
+//         var dropdownMenu = $(this).children(".dropdown-menu");
+//         if (dropdownMenu.is(":visible")) {
+//             dropdownMenu.parent().toggleClass("open");
+//         }
+//     });
+// });
 
 // add padding top to show content behind navbar
 $('body').css('padding-top', $('.navbar').outerHeight(85) + 'px')
@@ -39,7 +39,7 @@ mybutton = document.getElementById("myBtn");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    if (document.body.scrollTop > 120 || document.documentElement.scrollTop > 120) {
         mybutton.style.display = "block";
     } else {
         mybutton.style.display = "none";
