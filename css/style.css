@@ -1,5 +1,9 @@
 @import url(../fonts/yekan/css/fontiran.css);
 
+html {
+    -webkit-text-size-adjust: none
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -847,6 +851,7 @@ h5.price-font {
     font-size: 0.8rem;
     text-decoration: none;
 }
+
 .ul-footer-title li a:hover {
     color: #f1c40f;
 }
@@ -1402,6 +1407,35 @@ nav > div a.nav-item.nav-lin:focus {
 
     .user-menu-dropdown {
         top: 42px !important;
+    }
+
+    .sticky-top {
+        position: unset;
+        top: 0;
+        z-index: unset;
+    }
+
+    .h-nav-top {
+        height: 50px;
+        top: 67px;
+        z-index: unset;
+        width: 100%;
+    }
+
+    .smart-scroll {
+        position: unset;
+        top: 65px;
+        z-index: 1010;
+    }
+
+    .scrolled-down {
+        transform: unset;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .scrolled-up {
+        transform: unset;
+        transition: all 0.4s ease-in-out;
     }
 
 }
