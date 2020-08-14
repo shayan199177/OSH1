@@ -1461,11 +1461,39 @@ nav > div a.nav-item.nav-lin:focus {
     }
 
     .dropdown-menu {
-        top: 45px !important;
+        top: 42px !important;
     }
 
     .user-menu-dropdown {
         top: 42px !important;
+    }
+    .sticky-top {
+        position: unset;
+        top: 0;
+        z-index: unset;
+    }
+
+    .h-nav-top {
+        height: 50px;
+        top: 67px;
+        z-index: unset;
+        width: 100%;
+    }
+
+    .smart-scroll {
+        position: unset;
+        top: 65px;
+        z-index: 1010;
+    }
+
+    .scrolled-down {
+        transform: unset;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .scrolled-up {
+        transform: unset;
+        transition: all 0.4s ease-in-out;
     }
 }
 
@@ -1478,7 +1506,7 @@ nav > div a.nav-item.nav-lin:focus {
     }
 
     .dropdown-menu {
-        top: 45px !important;
+        top: 42px !important;
     }
 
     .user-menu-dropdown {
