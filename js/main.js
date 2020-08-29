@@ -1,8 +1,4 @@
-const menuIcon = document.querySelector(".humberger-menu");
-const navbar = document.querySelector(".navbar");
-menuIcon.addEventListener("click" ,() => {
-    navbar.classList.toggle("change");
-});
+
 
 // $(document).ready(function () {
 //     $(".dropdown, .btn-group").hover(function () {
@@ -32,19 +28,7 @@ if ($('.smart-scroll').length > 0) { // check if element exists
 }
 
 
-//Get the button:
-mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-    if (document.body.scrollTop > 120 || document.documentElement.scrollTop > 120) {
-        mybutton.style.display = "block";
-    } else {
-        mybutton.style.display = "none";
-    }
-}
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
@@ -341,3 +325,35 @@ $(document).ready(function () {
 //     // titleClass: 'xzoom-caption',
 //     // bg: false //zoom image output as background
 // };
+
+$('body').on('mouseenter mouseleave','.dropdown',function(e){
+    var _d=$(e.target).closest('.dropdown');
+    if (e.type === 'mouseenter')_d.addClass('show');
+    setTimeout(function(){
+        _d.toggleClass('show', _d.is(':hover'));
+        $('[data-toggle="dropdown"]', _d).attr('aria-expanded',_d.is(':hover'));
+    },300);
+});
+/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+
+//Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 120 || document.documentElement.scrollTop > 120) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+}
