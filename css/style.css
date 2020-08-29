@@ -15,6 +15,7 @@ body {
     background-color: #f7fafc;
     direction: rtl;
     padding: 0 !important;
+    overflow-x: hidden;
 }
 
 p {
@@ -160,7 +161,8 @@ select {
 .profile {
     padding: 10px 0;
 }
-.z-22{
+
+.z-22 {
     z-index: 22;
 }
 
@@ -340,7 +342,7 @@ select {
 /* MENU STYLES */
 .menu-wrap {
     position: absolute;
-    z-index: 21;
+
     right: 0;
 }
 
@@ -348,7 +350,7 @@ select {
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 2;
+    z-index: 22;
     cursor: pointer;
     width: 50px;
     height: 50px;
@@ -359,7 +361,6 @@ select {
     position: absolute;
     top: 0;
     right: 15px;
-    z-index: 1;
     width: 32px;
     height: 32px;
     background: transparent;
@@ -376,6 +377,7 @@ select {
     height: 2px;
     background: #1f1e1e;
     display: flex;
+    z-index: 22;
     align-items: center;
     justify-content: center;
     transition: all 0.4s ease;
@@ -386,7 +388,7 @@ select {
 .menu-wrap .hamburger > div::after {
     content: '';
     position: absolute;
-    z-index: 1;
+    z-index: 22;
     top: -10px;
     width: 100%;
     height: 2px;
@@ -446,6 +448,7 @@ select {
     background: #ffffffeb;
     width: 100%;
     height: 100%;
+    z-index: 21;
     display: flex;
     flex: none;
     align-items: center;
@@ -1610,15 +1613,26 @@ nav > div a.nav-item.nav-lin:focus {
 }
 
 .active-pages-cart {
-    color: #28a745;
+    color: #000000;
 }
 
 .green-border-bottom {
     border-bottom: 3px solid #28a745;
 }
 
+.gray-color {
+    color: #919191;
+}
+
 .dot-page-basket {
     height: 4px;
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    border: 1px solid rgba(0, 0, 0, .125);
 }
 
 
