@@ -72,6 +72,10 @@ textarea:focus, select:focus {
     transition: all 0.4s ease-in-out;
 }
 
+.small-s {
+    font-size: 70%;
+    font-weight: 400;
+}
 
 .btn {
     outline: none;
@@ -1215,7 +1219,7 @@ nav > div a.nav-item.nav-lin.active {
 }
 
 .nav-tabs .nav-item {
-    margin-bottom: 0 !important;
+    margin-bottom: -1px !important;
 }
 
 .tab-content {
@@ -1225,6 +1229,20 @@ nav > div a.nav-item.nav-lin.active {
     border-top: 2px solid #f1c40f;
     border-bottom: 2px solid #f1c40f;
 }
+.tab-content-xs {
+    background: white;
+    line-height: 25px;
+    border: none;
+    border-top: 2px solid #f1c40f;
+    border-bottom: none;
+}
+.top-0{
+    top: 0 !important;
+}
+.nav-pills .nav-link {
+    border-radius: .25rem;
+    color: #0b0b0b;
+}
 
 nav > div a.nav-item.nav-lin:hover,
 nav > div a.nav-item.nav-lin:focus {
@@ -1233,6 +1251,10 @@ nav > div a.nav-item.nav-lin:focus {
     color: #262626;
     border-radius: 0;
     transition: background 0.20s linear;
+}
+
+.font-88 {
+    font-size: 0.88rem;
 }
 
 .button-buy {
@@ -1247,8 +1269,25 @@ nav > div a.nav-item.nav-lin:focus {
     transition: all 0.2s ease-out;
 }
 
+.button-return {
+    font-size: 0.84rem;
+    border-radius: 5px;
+    color: #fff;
+    overflow: hidden;
+    text-align: center;
+    background-color: #17a2b8;
+    border: none;
+    padding: 5px 15px;
+    transition: all 0.2s ease-out;
+}
+
 .button-buy:hover {
     background-color: #fc394e;
+    color: white;
+}
+
+.button-return:hover {
+    background-color: #1eacc3;
     color: white;
 }
 
@@ -1256,8 +1295,34 @@ nav > div a.nav-item.nav-lin:focus {
     background-color: #f1f1f1;
 }
 
-.card ul {
-    background-color: #9e0c0f;
+.tabs-time {
+    background: #FFFFFF;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #495057;
+    top: 7px;
+    background-color: #fafad2;
+    border-color: #dee2e6;
+    border-bottom: none !important;
+    margin-bottom: -1px !important;
+}
+
+.nav-tabs .nav-link {
+    border-top-left-radius: .25rem;
+    color: black;
+    border-top-right-radius: .25rem;
+}
+
+.nav-tabs .nav-link:hover {
+    color: #f1c40f;
+}
+
+.alert-warning {
+    direction: rtl;
+}
+.alert-dismissible {
+    padding: 10px 15px !important;
 }
 
 .card-body {
@@ -1386,8 +1451,42 @@ nav > div a.nav-item.nav-lin:focus {
     border-radius: .25rem;
 }
 
+.form-control-textbox-item-2 {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 0.81rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+.form-control-textbox-item-2:focus {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 0.81rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
 .form-control-textbox-item:focus {
     border: 1px solid #ced4da !important;
+    font-size: 0.81rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #495057;
 }
 
 .form1 {
@@ -1533,6 +1632,15 @@ nav > div a.nav-item.nav-lin:focus {
     left: 0;
     right: 0;
 }
+.right-day-items{
+    padding: 5px 5px !important;
+    font-size: 0.8rem;
+}
+.right-day-items.active, .right-day-items.show {
+    background: #ffeeba !important;
+    color: #0b0b0b !important;
+    padding: 5px 5px !important;
+}
 
 .title-item-more {
     background: #f1c40f;
@@ -1601,6 +1709,10 @@ nav > div a.nav-item.nav-lin:focus {
 
 .border-bottom-c3 {
     border-bottom: 1px solid #dedede;
+}
+
+.border-top-c3 {
+    border-top: 1px solid #dedede;
 }
 
 .left-price-basket {
