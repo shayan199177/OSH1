@@ -239,6 +239,31 @@ jQuery('.slider-top').owlCarousel({
         },
     }
 });
+jQuery('.items-products').owlCarousel({
+    rtl: true,
+    loop: false,
+    autoplay: false,
+    responsive: {
+        0: {
+            items: 1
+        },
+        444: {
+            items: 2
+        },
+        576: {
+            items: 2
+        },
+        768: {
+            items: 3
+        },
+        992: {
+            items: 3
+        },
+        1200: {
+            items: 4
+        },
+    }
+});
 
 // $(function () {
 //     $("#bootnavbar").bootnavbar();
