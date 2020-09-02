@@ -243,6 +243,8 @@ jQuery('.items-products').owlCarousel({
     rtl: true,
     loop: false,
     autoplay: false,
+    touchDrag: false,
+    mouseDrag: false,
     responsive: {
         0: {
             items: 1

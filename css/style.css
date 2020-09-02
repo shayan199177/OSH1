@@ -1542,6 +1542,7 @@ nav > div a.nav-item.nav-lin:focus {
     /*box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1);*/
     transform: translateY(-4px);
 }
+
 .zoom-items-pageItems2:hover {
     border: 1px solid #8c8c8c;
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, .1);
@@ -1637,6 +1638,7 @@ nav > div a.nav-item.nav-lin:focus {
 .card-category {
     padding: 13px 22px !important;
 }
+
 .card-category-items-products {
     padding: 7px 3px 0 3px !important;
 }
@@ -1676,6 +1678,7 @@ nav > div a.nav-item.nav-lin:focus {
     font-size: 0.81rem;
     line-height: 25px;
 }
+
 .payment-serial-input:focus {
     font-size: 0.81rem !important;
     line-height: 25px;
@@ -1720,12 +1723,14 @@ nav > div a.nav-item.nav-lin:focus {
     background-color: #f9f9f9;
     border-bottom: none !important;
 }
+
 .card-header-i-products {
     padding: .15rem 1.25rem;
     margin-bottom: 0;
-    background-color: #f1c40f;
+    background-color: #dbdbdb;
     border-bottom: none !important;
 }
+
 .card-confirm-acc {
     position: relative;
     display: -ms-flexbox;
@@ -1736,9 +1741,10 @@ nav > div a.nav-item.nav-lin:focus {
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
-    border: 1px solid rgba(0,0,0,.125);
+    border: 1px solid rgba(0, 0, 0, .125);
     border-radius: .25rem;
 }
+
 .card-confirm-i {
     position: relative;
     display: -ms-flexbox;
@@ -1752,6 +1758,7 @@ nav > div a.nav-item.nav-lin:focus {
     border: none;
     border-radius: .25rem;
 }
+
 .item-more {
     background: #f1c40f;
     width: fit-content;
@@ -1825,10 +1832,12 @@ nav > div a.nav-item.nav-lin:focus {
 .green-border-bottom {
     border-bottom: 3px solid #28a745;
 }
-.btn-confirm-acc{
+
+.btn-confirm-acc {
     color: #5a5a5a;
 }
-.btn-confirm-acc:hover, .btn-confirm-acc:focus{
+
+.btn-confirm-acc:hover, .btn-confirm-acc:focus {
     text-decoration: none;
     color: #0e0e0e;
 }
@@ -1836,12 +1845,15 @@ nav > div a.nav-item.nav-lin:focus {
 .gray-color {
     color: #919191;
 }
-.btn-buy{
+
+.btn-buy {
     padding: 10px 34%;
 }
+
 .black-color {
     color: #0e0e0e;
 }
+
 .dot-page-basket {
     height: 4px;
 }
@@ -1851,6 +1863,14 @@ nav > div a.nav-item.nav-lin:focus {
     display: block;
     padding: .5rem .75rem;
     border: 1px solid rgba(0, 0, 0, .125);
+}
+
+.items-products .owl-stage{
+    position: relative;
+    -ms-touch-action: pan-Y;
+    touch-action: manipulation;
+    -moz-backface-visibility: hidden;
+    width: 100% !important;
 }
 
 
