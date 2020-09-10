@@ -542,8 +542,8 @@ topnav .active {
 .dropdown-menu {
     position: absolute !important;
     transform: none !important;
-    left: 0 !important;
-    right: 0 !important;
+    left: 0;
+    right: 0;
     will-change: unset !important;
     top: 35px !important;
     border: none;
@@ -655,11 +655,9 @@ topnav .active {
 }
 
 .user-menu-dropdown {
-    position: absolute;
-    top: 42px !important;
+    top: 62px !important;
     transform: none !important;
-    width: 200px !important;
-    right: -23px !important;
+    width: 210px !important;
 }
 
 .sub-cat {
@@ -1708,8 +1706,8 @@ nav > div a.nav-item.nav-lin:focus {
 }
 
 .title-item-more:hover {
-    background-color: #0f3cf1;
-    color: #ffffff;
+    background-color: #ffcf1a;
+    color: #fff;
 }
 
 .card-confirm {
@@ -1910,7 +1908,7 @@ nav > div a.nav-item.nav-lin:focus {
     }
 
     .user-menu-dropdown {
-        top: 42px !important;
+        top: 38px !important;
     }
 
     .sticky-top {
@@ -1969,7 +1967,7 @@ nav > div a.nav-item.nav-lin:focus {
     }
 
     .user-menu-dropdown {
-        top: 42px !important;
+        top: 38px !important;
     }
 
     .sticky-top {
@@ -2011,12 +2009,23 @@ nav > div a.nav-item.nav-lin:focus {
     }
 
     .dropdown-menu {
-        top: 42px !important;
+        top: 38px !important;
     }
 
     .user-menu-dropdown {
-        top: 42px !important;
+        top: 38px !important;
     }
+}
+
+/*/ Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+
+}
+/*/ Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+
 }
 
 
