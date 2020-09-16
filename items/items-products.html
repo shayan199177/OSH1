@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" type="text/css" href="../css/css-zoom/xzoom.css" media="all"/>
     <link type="text/css" rel="stylesheet" media="all" href="../js/js-zoom/fancybox/source/jquery.fancybox.css"/>
+    <link rel="stylesheet" href="../css/rangeslider.min.css">
     <link rel="stylesheet" href="../css/style.css" type="text/css">
 
 
@@ -36,7 +37,7 @@
             </div>
 
             <div class="d-none d-lg-flex col-lg-4 col-xl-4 order-lg-3 py-2 align-items-center justify-content-end">
-                <div class="dropdown ml-4 profile">
+                <div class="ml-4 profile">
                     <button class="btn btn-s dropdown-toggle" type="button" id="profileDropdown"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i class="fas fa-user-alt i-top ml-2"></i>
@@ -245,7 +246,7 @@
                         </li>
                     </ul>
                     <ul class="col d-flex d-lg-none align-items-center justify-content-end">
-                        <div class="dropdown ml-4 text-left z-22">
+                        <div class="ml-4 text-left z-22">
                             <button class="btn btn-s dropdown-toggle" type="button" id="profileDropdown1"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-user-alt i-top ml-2"></i>
@@ -305,34 +306,158 @@
 <div class="container-fluid">
     <div class="container">
         <div class="row">
-
             <div class="col-3">
-
-                <div id="accordion" class="mt-2">
-                    <div class="card-confirm-i">
-                        <div class="card-header-i-products" id="headingThree">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed btn-confirm-acc"
-                                        data-toggle="collapse"
-                                        data-target="#collapseThree" aria-expanded="false"
-                                        aria-controls="collapseThree">
-                                    برند
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                             data-parent="#accordion">
-                            <div class="card-body">
-                                <div class="col-12 d-flex mt-2">
-                                    <input class="payment-serial-input" type="text"
-                                           placeholder="افزودن کد تخفیف"
-                                           id="payment-voucher-input">
-                                    <span class="payment-serial-input-icon">ثبت</span>
-                                </div>
+                <p class="text-center small border-bottom-c3 py-2">فیلتر محصولات</p>
+                <ul class="list-group">
+                    <div class="list-group-item top-category active text-center rounded">مرتب سازی بر اساس:</div>
+                    <li class="list-group-item overflow-auto">
+                        <div>
+                            <div class="form-check-items text-right py-1">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                <label class="form-check-label mr-3 justify-content-around font-88" for="exampleRadios1">
+                                    محبوب ترین ها
+                                </label>
+                            </div>
+                            <div class="form-check-items text-right py-1">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                <label class="form-check-label mr-3 justify-content-around font-88" for="exampleRadios2">
+                                    جدیدترین ها
+                                </label>
+                            </div>
+                            <div class="form-check-items text-right py-1">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                                <label class="form-check-label mr-3 justify-content-around font-88" for="exampleRadios3">
+                                    گران ترین ها
+                                </label>
+                            </div>
+                            <div class="form-check-items text-right py-1">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option3">
+                                <label class="form-check-label mr-3 justify-content-around font-88" for="exampleRadios4">
+                                    ارزان ترین ها
+                                </label>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </li>
+                </ul>
+                <ul class="list-group">
+                    <div class="list-group-item top-category active text-center rounded mt-3">برند:</div>
+                    <li class="list-group-item overflow-auto">
+                        <div class="height-fix-280px">
+                            <div class="form-check-items text-right py-1">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label mr-3 justify-content-around font-88"
+                                       for="inlineCheckbox2"><span
+                                        class="">فیدار</span><span
+                                        class="position-absolute left-0 ">Fidar</span></label>
+                            </div>
+                            <div class="form-check-items text-right py-1">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label mr-3 justify-content-around font-88"
+                                       for="inlineCheckbox2"><span
+                                        class="">آوانتیس</span><span
+                                        class="position-absolute left-0 ">Avantis</span></label>
+                            </div>
+                            <div class="form-check-items text-right py-1">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option2">
+                                <label class="form-check-label mr-3 justify-content-around font-88"
+                                       for="inlineCheckbox2"><span
+                                        class="">نوتری</span><span
+                                        class="position-absolute left-0 ">Nutri</span></label>
+                            </div>
+                            <div class="form-check-items text-right py-1">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option2">
+                                <label class="form-check-label mr-3 justify-content-around font-88"
+                                       for="inlineCheckbox2"><span
+                                        class="">بوش</span><span
+                                        class="position-absolute left-0 ">Bosch</span></label>
+                            </div>
+                            <div class="form-check-items text-right py-1">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option2">
+                                <label class="form-check-label mr-3 justify-content-around font-88"
+                                       for="inlineCheckbox2"><span
+                                        class="">بلکاندو</span><span
+                                        class="position-absolute left-0 ">Belcando</span></label>
+                            </div>
+                            <div class="form-check-items text-right py-1">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option2">
+                                <label class="form-check-label mr-3 justify-content-around font-88"
+                                       for="inlineCheckbox2"><span
+                                        class="">جوسرا</span><span
+                                        class="position-absolute left-0 ">Josera</span></label>
+                            </div>
+                            <div class="form-check-items text-right py-1">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="option2">
+                                <label class="form-check-label mr-3 justify-content-around font-88"
+                                       for="inlineCheckbox2"><span
+                                        class="">دکتر کلادرز</span><span
+                                        class="position-absolute left-0 ">Dr.Clauders</span></label>
+                            </div>
+                            <div class="form-check-items text-right py-1">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox8" value="option2">
+                                <label class="form-check-label mr-3 justify-content-around font-88"
+                                       for="inlineCheckbox2"><span
+                                        class="">رویال فید</span><span
+                                        class="position-absolute left-0 ">Royal Feed</span></label>
+                            </div>
+                            <div class="form-check-items text-right py-1">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox9" value="option2">
+                                <label class="form-check-label mr-3 justify-content-around font-88"
+                                       for="inlineCheckbox2"><span
+                                        class="">هپی داگ</span><span
+                                        class="position-absolute left-0 ">Happy Dog</span></label>
+                            </div>
+                            <div class="form-check-items text-right py-1">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox10" value="option2">
+                                <label class="form-check-label mr-3 justify-content-around font-88"
+                                       for="inlineCheckbox2"><span
+                                        class="">مفید</span><span
+                                        class="position-absolute left-0 ">MoFeed</span></label>
+                            </div>
+                            <div class="form-check-items text-right py-1">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox11" value="option2">
+                                <label class="form-check-label mr-3 justify-content-around font-88"
+                                       for="inlineCheckbox2"><span
+                                        class="">جانگل</span><span
+                                        class="position-absolute left-0 ">Jungle</span></label>
+                            </div>
+                            <div class="form-check-items text-right py-1">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox12" value="option2">
+                                <label class="form-check-label mr-3 justify-content-around font-88"
+                                       for="inlineCheckbox2"><span
+                                        class="">رویال کنین</span><span
+                                        class="position-absolute left-0 ">Royal Canin</span></label>
+                            </div>
+                            <div class="form-check-items text-right py-1">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox13" value="option2">
+                                <label class="form-check-label mr-3 justify-content-around font-88"
+                                       for="inlineCheckbox2"><span
+                                        class="">پرامی</span><span
+                                        class="position-absolute left-0 ">Pramy</span></label>
+                            </div>
+                            <div class="form-check-items text-right py-1">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox14" value="option2">
+                                <label class="form-check-label mr-3 justify-content-around font-88"
+                                       for="inlineCheckbox2"><span
+                                        class="">سلبن</span><span
+                                        class="position-absolute left-0 ">Celebone</span></label>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="list-group">
+                    <div class="list-group-item top-category active text-center rounded mt-3">محدوده قیمت:</div>
+                    <li class="list-group-item">
+                        <div>
+                            <!--                            <p class="text-center h6 font-weight-bold">محدوده قیمت</p>-->
+                            <b>10 هزار تومان</b> <input id="ex2" type="text" class="span2" value=""
+                                               data-slider-min="10" data-slider-max="1000"
+                                               data-slider-step="5"
+                                               data-slider-value="[250,450]"/>
+                            <b>2 میلیون تومان</b>
+                        </div>
+                    </li>
+                </ul>
 
             </div>
 
@@ -340,7 +465,7 @@
                 <div class="owl-carousel items-products">
                     <div class="card-category-items-products">
                         <div class="category-h330 zoom-items-pageItems2">
-                            <div><a href="#"><img src="../img/fish/7.jpg" alt="shayanPet"
+                            <div><a href="#"><img src="../img/dog/1.jpg" alt="shayanPet"
                                                   class="img-item mx-auto pt-3"></a>
                             </div>
                             <div class="category-w235 text-center">
@@ -359,7 +484,27 @@
                     </div>
                     <div class="card-category-items-products">
                         <div class="category-h330 zoom-items-pageItems2">
-                            <div><a href="#"><img src="../img/fish/8.jpg" alt="shayanPet"
+                            <div><a href="#"><img src="../img/dog/1.png" alt="shayanPet"
+                                                  class="img-item mx-auto pt-3"></a>
+                            </div>
+                            <div class="category-w235 text-center">
+                                <a href="#" class="text-right text-decoration-none text-card">
+                                    <h4 class="font-item-cat pt-2 pr-3 pl-3">تانک آکواریوم با پایه چوبی</h4>
+                                    <h4 class="font-subitem-cat pt-2 pr-3 pl-3">۱۰۰ تا ۲۰۰ لیتری</h4>
+                                </a>
+                                <h5 class="price-font">
+                                    <div class="toman-price-off mb-2">۴۵۰,۰۰۰<span
+                                            class="badge badge-danger badge-pill mr-2 font-size-08rem-color-w">۲۳٪</span>
+                                    </div>
+                                    ۲۹۰,۰۰۰<span
+                                        class="toman-price">تومان</span></h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-category-items-products">
+                        <div class="category-h330 zoom-items-pageItems2">
+                            <div><a href="#"><img src="../img/dog/2.jpg" alt="shayanPet"
                                                   class="img-item mx-auto pt-3"></a>
                             </div>
                             <div class="category-w235 text-center">
@@ -376,7 +521,7 @@
 
                     <div class="card-category-items-products">
                         <div class="category-h330 zoom-items-pageItems2">
-                            <div><a href="#"><img src="../img/fish/8.jpg" alt="shayanPet"
+                            <div><a href="#"><img src="../img/dog/2.png" alt="shayanPet"
                                                   class="img-item mx-auto pt-3"></a>
                             </div>
                             <div class="category-w235 text-center">
@@ -393,7 +538,109 @@
 
                     <div class="card-category-items-products">
                         <div class="category-h330 zoom-items-pageItems2">
-                            <div><a href="#"><img src="../img/fish/8.jpg" alt="shayanPet"
+                            <div><a href="#"><img src="../img/dog/3.jpg" alt="shayanPet"
+                                                  class="img-item mx-auto pt-3"></a>
+                            </div>
+                            <div class="category-w235 text-center">
+                                <a href="#" class="text-right text-decoration-none text-card">
+                                    <h4 class="font-item-cat pt-2 pr-3 pl-3">تانک آکواریوم با پایه چوبی</h4>
+                                    <h4 class="font-subitem-cat pt-2 pr-3 pl-3">۱۰۰ تا ۲۰۰ لیتری</h4>
+                                </a>
+                                <h5 class="price-font">
+                                    ۲۹۰,۰۰۰<span
+                                        class="toman-price">تومان</span></h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-category-items-products">
+                        <div class="category-h330 zoom-items-pageItems2">
+                            <div><a href="#"><img src="../img/dog/3.png" alt="shayanPet"
+                                                  class="img-item mx-auto pt-3"></a>
+                            </div>
+                            <div class="category-w235 text-center">
+                                <a href="#" class="text-right text-decoration-none text-card">
+                                    <h4 class="font-item-cat pt-2 pr-3 pl-3">تانک آکواریوم با پایه چوبی</h4>
+                                    <h4 class="font-subitem-cat pt-2 pr-3 pl-3">۱۰۰ تا ۲۰۰ لیتری</h4>
+                                </a>
+                                <h5 class="price-font">
+                                    ۲۹۰,۰۰۰<span
+                                        class="toman-price">تومان</span></h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-category-items-products">
+                        <div class="category-h330 zoom-items-pageItems2">
+                            <div><a href="#"><img src="../img/dog/4.jpg" alt="shayanPet"
+                                                  class="img-item mx-auto pt-3"></a>
+                            </div>
+                            <div class="category-w235 text-center">
+                                <a href="#" class="text-right text-decoration-none text-card">
+                                    <h4 class="font-item-cat pt-2 pr-3 pl-3">تانک آکواریوم با پایه چوبی</h4>
+                                    <h4 class="font-subitem-cat pt-2 pr-3 pl-3">۱۰۰ تا ۲۰۰ لیتری</h4>
+                                </a>
+                                <h5 class="price-font">
+                                    ۲۹۰,۰۰۰<span
+                                        class="toman-price">تومان</span></h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-category-items-products">
+                        <div class="category-h330 zoom-items-pageItems2">
+                            <div><a href="#"><img src="../img/dog/4.png" alt="shayanPet"
+                                                  class="img-item mx-auto pt-3"></a>
+                            </div>
+                            <div class="category-w235 text-center">
+                                <a href="#" class="text-right text-decoration-none text-card">
+                                    <h4 class="font-item-cat pt-2 pr-3 pl-3">تانک آکواریوم با پایه چوبی</h4>
+                                    <h4 class="font-subitem-cat pt-2 pr-3 pl-3">۱۰۰ تا ۲۰۰ لیتری</h4>
+                                </a>
+                                <h5 class="price-font">
+                                    ۲۹۰,۰۰۰<span
+                                        class="toman-price">تومان</span></h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-category-items-products">
+                        <div class="category-h330 zoom-items-pageItems2">
+                            <div><a href="#"><img src="../img/dog/2.jpg" alt="shayanPet"
+                                                  class="img-item mx-auto pt-3"></a>
+                            </div>
+                            <div class="category-w235 text-center">
+                                <a href="#" class="text-right text-decoration-none text-card">
+                                    <h4 class="font-item-cat pt-2 pr-3 pl-3">تانک آکواریوم با پایه چوبی</h4>
+                                    <h4 class="font-subitem-cat pt-2 pr-3 pl-3">۱۰۰ تا ۲۰۰ لیتری</h4>
+                                </a>
+                                <h5 class="price-font">
+                                    ۲۹۰,۰۰۰<span
+                                        class="toman-price">تومان</span></h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-category-items-products">
+                        <div class="category-h330 zoom-items-pageItems2">
+                            <div><a href="#"><img src="../img/dog/1.jpg" alt="shayanPet"
+                                                  class="img-item mx-auto pt-3"></a>
+                            </div>
+                            <div class="category-w235 text-center">
+                                <a href="#" class="text-right text-decoration-none text-card">
+                                    <h4 class="font-item-cat pt-2 pr-3 pl-3">تانک آکواریوم با پایه چوبی</h4>
+                                    <h4 class="font-subitem-cat pt-2 pr-3 pl-3">۱۰۰ تا ۲۰۰ لیتری</h4>
+                                </a>
+                                <h5 class="price-font">
+                                    ۲۹۰,۰۰۰<span
+                                        class="toman-price">تومان</span></h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-category-items-products">
+                        <div class="category-h330 zoom-items-pageItems2">
+                            <div><a href="#"><img src="../img/dog/3.jpg" alt="shayanPet"
                                                   class="img-item mx-auto pt-3"></a>
                             </div>
                             <div class="category-w235 text-center">
@@ -497,26 +744,25 @@
                 </div>
 
 
+                    <nav aria-label="...">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item">
+                                <a class="page-link" href="#">بعدی</a>
+                            </li>
 
-                <nav aria-label="...">
-                    <ul class="pagination">
-                        <li class="page-item disabled">
-                            <span class="page-link">Previous</span>
-                        </li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item active">
-      <span class="page-link">
-        2
-        <span class="sr-only">(current)</span>
-      </span>
-                        </li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item">
-                            <a class="page-link" href="#">Next</a>
-                        </li>
-                    </ul>
-                </nav>
-
+                            <li class="page-item"><a class="page-link" href="#">۳</a></li>
+                            <li class="page-item active">
+                             <span class="page-link">
+                                    ۲
+                               <span class="sr-only">(current)</span>
+                              </span>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">۱</a></li>
+                            <li class="page-item disabled">
+                                <span class="page-link">قبلی</span>
+                            </li>
+                        </ul>
+                    </nav>
 
             </div>
         </div>
@@ -823,6 +1069,7 @@
 <script type="text/javascript" src="../js/js-zoom/vendor/placeholder.js"></script>
 <script type="text/javascript" src="../js/js-zoom/vendor/fastclick.js"></script>
 <script type="text/javascript" src="../js/js-zoom/vendor/jquery.cookie.js"></script>
+<script src="../js/rangeslider.min.js"></script>
 <!--<script type="text/javascript" src="../js/js-zoom/hammer.js/1.0.5/jquery.hammer.min.js"></script>-->
 <!--<script src="../js/js-zoom/setup.js"></script>-->
 <script src="../js/main.js"></script>

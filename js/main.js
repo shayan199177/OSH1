@@ -318,6 +318,22 @@ $(document).ready(function () {
     $(".xzoom").xzoom();
 });
 
+// price range
+
+
+$("#ex2").slider({});
+
+// end price range
+
+var div = document.getElementById("aerobot");
+window.onscroll = function() {
+    var bodyHeight	= parseInt(getComputedStyle(document.body).height, 10);
+    var scrollLimit = bodyHeight - window.innerHeight;
+    var scrollTop	= document.body.scrollTop;
+    var scrollPCT	= (scrollTop / (scrollLimit/100)) / 100;
+    img.style.top	= bodyHeight * scrollPCT - img.offsetHeight + "px" ;
+}
+
 // $.fn.xzoom.defaults = {
 //     // position: 'left', //top, left, right, bottom, inside, lens, fullscreen, #ID
 //     // mposition: 'inside', //inside, fullscreen
