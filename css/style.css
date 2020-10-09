@@ -171,7 +171,7 @@ select {
 }
 
 #myBtn {
-    display: none; /* Hidden by default */
+    display: inherit; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
     bottom: 20px; /* Place the button at the bottom of the page */
     left: 30px; /* Place the button 30px from the right */
@@ -472,7 +472,7 @@ select {
 .menu-wrap .menu > div > div > ul > li {
     list-style: none;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding: 1rem;
 }
 
@@ -544,6 +544,7 @@ topnav .active {
     transform: none !important;
     left: 0;
     right: 0;
+    width: 100%;
     will-change: unset !important;
     top: 35px !important;
     border: none;
@@ -1283,7 +1284,19 @@ nav > div a.nav-item.nav-lin:focus {
     color: #fff;
     overflow: hidden;
     text-align: center;
-    background-color: #17a2b8;
+    background-color: #007bff;
+    border: none;
+    padding: 5px 15px;
+    transition: all 0.2s ease-out;
+}
+
+.button-return-2 {
+    font-size: 0.84rem;
+    border-radius: 5px;
+    color: #000000;
+    overflow: hidden;
+    text-align: center;
+    background-color: #21252905;
     border: none;
     padding: 5px 15px;
     transition: all 0.2s ease-out;
@@ -1295,7 +1308,7 @@ nav > div a.nav-item.nav-lin:focus {
 }
 
 .button-return:hover {
-    background-color: #1eacc3;
+    background-color: #007bffd4;
     color: white;
 }
 
@@ -1306,7 +1319,40 @@ nav > div a.nav-item.nav-lin:focus {
 .tabs-time {
     background: #FFFFFF;
 }
-
+.fish-img{
+    background-image: url("../img/icon-menu/fish.png");
+    background-repeat: no-repeat;
+    background-size: 80px 80px;
+    background-position: 22% 98%;
+    background-color: #ffffff;
+}
+.dog-img{
+    background-image: url("../img/icon-menu/dog.png");
+    background-repeat: no-repeat;
+    background-size: 80px 80px;
+    background-position: 22% 98%;
+}
+.cat-img{
+    background-image: url("../img/icon-menu/cat.png");
+    background-repeat: no-repeat;
+    background-size: 80px 80px;
+    background-position: 22% 98%;
+}
+.bird-img{
+    background-image: url("../img/icon-menu/parrot.png");
+    background-repeat: no-repeat;
+    background-size: 80px 80px;
+    background-position: 22% 98%;
+}
+.rabbit-img{
+    background-image: url("../img/icon-menu/rabbit.png");
+    background-repeat: no-repeat;
+    background-size: 80px 80px;
+    background-position: 22% 98%;
+}
+.opacity-4{
+    opacity: 0.4;
+}
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
     color: #495057;
     top: 7px;
