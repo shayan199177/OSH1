@@ -350,7 +350,7 @@
 <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
 <!--end header-->
 <!-- start content -->
-<div class="container-fluid">
+<div class="container-fluid demo">
     <div class="container">
         <div class="row">
             <div class="col-12 text-right mt-3 mb-3">
@@ -547,8 +547,12 @@
 <script type="text/javascript" src="../js/js-zoom/vendor/placeholder.js"></script>
 <script type="text/javascript" src="../js/js-zoom/vendor/fastclick.js"></script>
 <script type="text/javascript" src="../js/js-zoom/vendor/jquery.cookie.js"></script>
-<!--<script type="text/javascript" src="../js/js-zoom/hammer.js/1.0.5/jquery.hammer.min.js"></script>-->
-<!--<script src="../js/js-zoom/setup.js"></script>-->
 <script src="../js/main.js"></script>
+<script src="../js/persianumber.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.demo').persiaNumber();
+    });
+</script>
 </body>
 </html>

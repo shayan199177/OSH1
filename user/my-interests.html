@@ -401,7 +401,7 @@
 
 
 <div class="container-fluid">
-    <div class="container">
+    <div class="container demo">
         <div class="row">
             <div class="col-12 text-right mt-3 mb-3">
                 <div class="col-12 border-bottom-c3"><h5 class="h6">علاقه مندی ها<span
@@ -798,8 +798,12 @@
 <script type="text/javascript" src="../js/js-zoom/vendor/placeholder.js"></script>
 <script type="text/javascript" src="../js/js-zoom/vendor/fastclick.js"></script>
 <script type="text/javascript" src="../js/js-zoom/vendor/jquery.cookie.js"></script>
-<!--<script type="text/javascript" src="../js/js-zoom/hammer.js/1.0.5/jquery.hammer.min.js"></script>-->
-<!--<script src="../js/js-zoom/setup.js"></script>-->
 <script src="../js/main.js"></script>
+<script src="../js/persianumber.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.demo').persiaNumber();
+    });
+</script>
 </body>
 </html>
