@@ -1325,7 +1325,6 @@ nav > div a.nav-item.nav-lin:focus {
     background-repeat: no-repeat;
     background-size: 80px 80px;
     background-position: 22% 98%;
-    background-color: #ffffff;
 }
 
 .dog-img {
@@ -2165,6 +2164,7 @@ input[type=range]::-ms-thumb {
     border-radius: 1.25rem;
     font-size: 0.83rem;
 }
+
 .form-control-profile-add {
     display: block;
     width: 100% !important;
@@ -2180,6 +2180,7 @@ input[type=range]::-ms-thumb {
     border-radius: 1.25rem;
     font-size: 0.92rem !important;
 }
+
 .form-control-profile-add:focus {
     display: block;
     width: 100% !important;
@@ -2194,6 +2195,75 @@ input[type=range]::-ms-thumb {
     border-radius: 1.25rem;
     font-size: 0.92rem !important;
 }
+
+.schedule-rows td {
+    width: 80px;
+    height: 30px;
+    margin: 3px;
+    padding: 5px;
+    background-color: #3498DB;
+    cursor: pointer;
+}
+
+.schedule-rows td:first-child {
+    background-color: transparent;
+    text-align: right;
+    position: relative;
+    top: -12px;
+}
+
+.schedule-rows td[data-selected],
+.schedule-rows td[data-selecting] {
+    background-color: #E74C3C;
+}
+
+.schedule-rows td[data-disabled] {
+    opacity: 0.55;
+}
+
+.card-header-dmv {
+    padding: 0.25rem 0.25rem;
+    margin-bottom: 0;
+    background-color: white;
+    border: none;
+}
+
+.name-dmv {
+    color: #353535;
+    font-size: 0.9rem;
+}
+
+.name-dmv:hover {
+    color: #000000;
+}
+
+.btn-link:hover {
+    color: #0056b3;
+    text-decoration: none;
+}
+.btn-link:focus {
+    color: #0056b3;
+    text-decoration: none;
+}
+.card-body-dmv{
+    background-color: #FFFFFF;
+}
+.card-dmv{
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    /* border-radius: .25rem; */
+    margin: 3px;
+}
+
+
 /*  media query  */
 /*// Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 576px) {
