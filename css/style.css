@@ -1584,6 +1584,10 @@ nav > div a.nav-item.nav-lin:focus {
     color: #29b42f;
 }
 
+.blue-color {
+    color: #1da1f2;
+}
+
 .zoom-items-pageItem {
     transition: transform .2s; /* Animation */
 }
@@ -1970,6 +1974,14 @@ nav > div a.nav-item.nav-lin:focus {
     width: 100% !important;
 }
 
+.items-dmv .owl-stage {
+    position: relative;
+    -ms-touch-action: pan-Y;
+    touch-action: manipulation;
+    -moz-backface-visibility: hidden;
+    width: 100% !important;
+}
+
 .body-2 {
     height: 1280px;
     background: #ffeeba;
@@ -2220,12 +2232,14 @@ input[type=range]::-ms-thumb {
 .schedule-rows td[data-disabled] {
     opacity: 0.55;
 }
+
 .img-dmv {
     height: 100px;
     width: 100px;
     align-self: center;
     margin: 0 10px;
 }
+
 .name-dmv-p {
     color: #353535;
     font-size: 0.9rem;
@@ -2235,25 +2249,36 @@ input[type=range]::-ms-thumb {
     color: #353535;
     font-size: 0.92rem;
 }
+
 .name-dmv-2 {
     color: #2fa525;
     font-size: 0.8rem;
 }
-.input-date-time{
+
+.input-date-time {
     border: 2px solid #f1c40f;
     border-radius: 0.55rem;
     padding: 3px 10px;
 }
+
 .name-dmv:hover {
     color: #000000;
 }
 
-.card-dmv{
+.card-dmv {
     background: white;
     padding: 15px;
     margin: 10px 0;
 }
 
+.hw-slider {
+    height: 420px;
+    float: left;
+}
+
+.bg-slider-dmv {
+    background-color: #bcfbff;
+}
 
 /*  media query  */
 /*// Extra small devices (portrait phones, less than 576px)*/

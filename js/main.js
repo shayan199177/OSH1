@@ -266,6 +266,33 @@ jQuery('.items-products').owlCarousel({
         },
     }
 });
+jQuery('.items-dmv').owlCarousel({
+    rtl: true,
+    loop: false,
+    autoplay: false,
+    touchDrag: false,
+    mouseDrag: false,
+    responsive: {
+        0: {
+            items: 1
+        },
+        444: {
+            items: 1
+        },
+        576: {
+            items: 1
+        },
+        768: {
+            items: 2
+        },
+        992: {
+            items: 2
+        },
+        1200: {
+            items: 3
+        },
+    }
+});
 
 // $(function () {
 //     $("#bootnavbar").bootnavbar();
