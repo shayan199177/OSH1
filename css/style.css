@@ -2340,6 +2340,10 @@ input[type=range]::-ms-thumb {
     background-color: #0278ae;
     height: auto;
 }
+.bg-dmvo-container {
+    background-color: #16697a;
+    height: auto;
+}
 
 .img-item-dmv {
     padding: 0;
